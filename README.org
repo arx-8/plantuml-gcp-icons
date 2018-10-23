@@ -1,0 +1,22 @@
+* About
+
+This is heavily inspired in the [[https://github.com/milo-minderbinder/AWS-PlantUML][PlantUML AWS library]].
+
+* How to use
+
+Clone/download a copy of this repo and then make sure to include
+~common.puml~ first, then all the icons you might need.
+
+#+BEGIN_SRC plantuml
+  @startuml
+  !include ./common.puml
+  !include ./GCP Icons/Products & Services/Storage & Databases/Cloud Bigtable.puml
+  !include ./GCP Icons/Products & Services/Big Data/BigQuery.puml
+
+  GCP_CloudBigtable(foo)
+  GCP_BigQuery(bar)
+
+  foo -> bar
+
+  @enduml
+#+END_SRC
