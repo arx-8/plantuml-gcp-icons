@@ -1,0 +1,15 @@
+sprite $CloudStorage [256x256/16z] {
+xCz10K0004Knn_LFh88JU7yDTbmsCpCpCpCp7jBUGtiFxJt4-yJxnFl4-yJxnFlid-uJxxD_ki_-wJxxf_l4--oVxhD_ki_-wJxnFlkd--oVxjFkxo_UP_zq
+d_tJVU9zza_tsJ_TP_zqdtYV_TDzza_tsJ_T9zvd_tIV_TDzza_tYVVPFzrd_tIVTdz_yJxxf_lid-xJxkyltcV_T9_zqttYVVPFzza_tMV_T9zu_sJVp6uO
+Y84Gkhxfl-7S6Id_mHeBNWMylTTc0FkJzKSdCF0toFxjej2v_gcdp_W9aTVV_lo8qFB70VwbbcqPaSw_J02hqa8czozuKxU4H3h_YJThHqgayo_uKYNzAxvq
+Van8ddz4Ja3n_e-S24IU_q52_w2iUFzp_H6a-_whxFMPhFu1tn_A_f3tHs3_vEj_3QVGAu4E0iOOOumnnlZxL-Z_n-iVulwNfh_z8wdm-hVtFvxexd_bt_y4
+qL-x_u0p-WzjHqpL_akWsNzo_otGwZ-w_-h-j_qz__63fh_ddmAL-RTx-tPG020C034i_bMZW3TilJg8WEv_VAdDdr-Sp_nfFct-_Dhy-SNvp9_cq-RFhysV
+NvpF_6a-RVxyslpvnVdCd-RJvi-lpPzVd4-RFxysVtvnFlEd-RJvyslpvnVdCt-QJvi_lpP_Vd4-ywVvjFdpQ_Fd5-SpVvfFcp-_Ddz-SJxpf_cq-VDhy-SN
+vzFcpw_Ddr-SJvi_lpYVE9yudpWVRJtYVBJruFVujTPQQwsrrbeF
+}
+
+skinparam rectangle<<CloudStorage>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudStorage(alias) PUML_ENTITY(rectangle,#4285F4,CloudStorage,alias,CloudStorage)

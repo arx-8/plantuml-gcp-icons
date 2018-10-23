@@ -1,0 +1,15 @@
+sprite $CloudComposer [256x256/16z] {
+xTq7YkDG60JXXZLotV_2c_EAjvBnQCpVLJVueCalv71cPcPcPcR6EzMWNzUWNzUWNrVEXt8-bFEXd0_bV2ZdW_vgFfJpGNyr7_HNyq5_DH_A-Q2_cW_wg_cW
+lveFvNpGNyq7_TLywERhfvmF-glveB-Q3-Lyq5_D1_tLVD1VpOToFkYlveF-QZxeh-P3EH_qL_D1VpKVz5_EtsvFR-FXBkTpozExNRi0_Spne_zqJF9pdZ_9
+hv-p_6b-z9-8UNxq7uw9Vexp9_hrSvG_rO_-0p7NZ_u3_C5-3l17-z6_ZEb-Bl6lsnuINk5dlX_z2tw1dmM_me_-1R_0pvlxxzjkn_pRRlUtzlF4RjdjcF-2
+TIpu1NxzBFWLVlGl-0L-z2_u1NuM_0A_VXRy2Z_w5_m2Fqdqq-id-cdsK--dsQ-Vw_pwzQyRwTUlNxz-_VgtPVFzwxQh_VhrfzkVUdzw_VgJ9Ar-_VbMfrz_
+VjJfZ_uVDVhpUsr-_VcpDd_q_rcNF_h_hicVlVG_hUsswiDx-r_g_j_r_kZVhy2_uEjFWp-hfllrl-VxBo_WZ_vri_tH_xyc-tEagNxzETPKV_GVQwO_-eys
+qPypJVFhpxcc-QF_NBFyqN-sIVuyqXI__ZpM5F_B_7_8j-wttUvywpN-F_J_I_qfvoVTVFtfvkjFEJ_HNyrFkldwqytNdt9-eh-QdtJpzQURhp_b_4H_DJ_f
+vkjFDrz_olc9_cf-qitNdsw-_fJp4_tL_AIRhp_TVFqfvoVTVFtfvkjFEJ_fvkjFEJyfvoVb_AISdwHRdwISdwH2l-xbyMPcPcPcPlO9
+}
+
+skinparam rectangle<<CloudComposer>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudComposer(alias) PUML_ENTITY(rectangle,#4285F4,CloudComposer,alias,CloudComposer)

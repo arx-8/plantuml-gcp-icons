@@ -1,0 +1,10 @@
+sprite $modifiers_highCPUmachine_high [120x120/16z] {
+xTArWSH054J1dq7bd-svnmk25lGp1LD3SvHQQwsrrXeXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHO
+GYmXbX3BNA_MMlDh_x_wylR7I0jO_xzRxdh3jTprbkifjsxT9zzUqgtxiv0xLtRhJiQTZ3kxkVEb2xW_Mt3hwjQT1UuiO6SMkBE0dLdWpWBsSBNMMckjjTO-
+}
+
+skinparam rectangle<<modifiers_highCPUmachine>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_highCPUmachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_highCPUmachine,alias,modifiers_highCPUmachine)

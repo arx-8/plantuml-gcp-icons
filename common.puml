@@ -1,0 +1,1 @@
+!define PUML_ENTITY(e_type,e_color,e_sprite,e_alias,e_stereo) e_type "<color:e_color><$e_sprite></color>" as e_alias <<e_stereo>>

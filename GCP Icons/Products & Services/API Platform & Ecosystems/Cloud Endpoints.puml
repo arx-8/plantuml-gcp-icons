@@ -1,0 +1,16 @@
+sprite $CloudEndpoints [256x256/16z] {
+xTk9RJCx00FXoO7TwR_YzphuhwLZWMG10hu9ZjYM-ErjsxPjsxPjsxPj_j2wzQhTUjLklMevNylvMixNShwMyxMSh_DNyxMSh_DNytN-QhxENytNShxENytN
+-QlvEdyrNylvEdyrN-UlvcitVtxB-Jf_DL_dh-PhEL_dh-Rh_DLydR-Qh-LydR-Qh_DNytN-QhwMytN-QhxENytN-QlvMixN-QlvEdyrNxlvyrlEr_ch-Jf_
+DL-x-VDRpjVvg_awVpLVo_awVpLVvw_cw_pLV2tdw_pLV8txx-_lxyl7Tlr_t1tmn_WV0DTZV82FG80e7wu7-V1nH_tFy-5wY1y9aEV3zH0_7o32X_kVZuD8
+WDVmkHxvy-S31FXF-KC1Klo0FnKWp__od_SL213m1_Zv07d-4G5o_FSE4EUV4I36V_i0MVuX0LBy4m84-QS42F4F2P3YdnA03F-O0A_YV_xnxbo0r_C_-EDz
+108Sm0y4E81_Qe3Ft-G70to-WVyt-8401NuFyFz6W03_FVmNlnKWoEVsW01H_Wa1WlmZ0dp-yGxXw_LZdtye-02OvcCYm2byIGN8ynk-0CppOm72_8eV0FBy
+P80Wl-C7m3p_W00v_g7t7oYu0F9YFXnp_ua3Be05_0b-A43KVzVTVytmvIK1xWUEY_7p5y1lVJB0QGy0xeUEY_3p0Ux7ZdkQxolUFzs1utBylV-Rdsx-_9Jp
+OVvgFdJpvwURFp_bV9Y_cW_T_FdfvizFEH_ch-P3Dtz-kldpKyw7-QlvqCsVdsx-_9JpePi_Fzty-Iddm_pLVEZcpqytVtxA-J1_DH-w-VFJpP-VSZxCNys7
+RlxyTFFdfvmFyrVpePi_Fzty-Iddm_pLVEZcpqytVtxA-T3Ddvzk_loKyw6RFp_bV2ZdGpaVolb0jnuevmC5-d22F7xRjctRjctRjctx3m
+}
+
+skinparam rectangle<<CloudEndpoints>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudEndpoints(alias) PUML_ENTITY(rectangle,#4285F4,CloudEndpoints,alias,CloudEndpoints)

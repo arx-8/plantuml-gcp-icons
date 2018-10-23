@@ -1,0 +1,15 @@
+sprite $PartnerInterconnect [256x256/16z] {
+xTr5igCx6CRWzzucxN_3pKnnLQSE_9BcWSUZWFrvnrLLLLLLLHMFb5iFuDO3kFK0SZx8-I3dWvmFSZx8-P1VpGSv7_Ah-P1VpOVyQZx8-P1VpOVyQZxaL_D1
+peVyQZxaL_F1pS-Fd0_vrNp8h-Q3d0_vrNp8h-P3VZKVv7p8h-P3VZKVyglv8ET3VZKVyglva5_D1paVyglva5_DXmVcvt-vk_RoWHVW0HRywRwX_5pFJ_xZ
+kAAVdSOL_VdPMLpLJ_w3kAwV_3VZeNgS5xqLr_QJ_u1_OJ_v3_WNzfF_Zs7mysU-mq_-tuR5J_xVXCVFlVdvt_ot6_rtxZzuhd_itdp-syt-E_N_jptu0Zp4
+xnsd_Xrqv_UBpK_-xyBdPz_2vy_FleJJJ_wFOVMpBJzUFykFsO_UZyYV_m6qT_QVb_-W_Fdpvy-VFt_-_FdLtt_cza_ldzUVN_txVtxr_t_v-_y_V_j_bFk_
+yhV_C__tkVO_xzv-dlV-zyv_R1P__ix_vU_yR_xElzlcF-Hl_al-vZ_bR_wPRVvV_kP_vc_-R_xcNz_AxM_-_wxcN_TVTFzB_ku_EY-_ch-v-VddvkUVdB-v
+-VddvkUVdB_bL_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_Et_Ah-PkRdtzkVlx9-Lj-DNzpy_FFpSy_ENzpy_FFpSy_ENzpy_DFpj_a_4tE
+t-JyRMxzDZb_crR_hIUFhwgggggggdS
+}
+
+skinparam rectangle<<PartnerInterconnect>> {
+  BackgroundColor White
+}
+
+!define GCP_PartnerInterconnect(alias) PUML_ENTITY(rectangle,#4285F4,PartnerInterconnect,alias,PartnerInterconnect)

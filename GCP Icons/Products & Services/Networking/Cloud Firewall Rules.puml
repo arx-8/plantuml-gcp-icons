@@ -1,0 +1,15 @@
+sprite $CloudFirewallRules [256x256/16z] {
+xTr7akDM0CRWlvE4dUz_Mw_CycHngYSq0QoLFcM9B-nyLLLLLLLL_BQayC_Jwe-q-YEj_aZE1paVv7oGyq7E1paVyglv8ET3VZKVyglva5_D1paVyglva5_D
+X_ngFiZva5_DX_ngFhZv-P7p8R-Q3_dLV93p8R-Q3_dLVCYlveES3_dLVCYlvaD-DH_aVCYlvaD-DH_og_aWvqD-DH_og_dmE_ZvRplHAqUll_wHESk_cf_y
+9-9wVl8_75VqiqVZYlxyxB6ugf_y3yHr_VpYox_VJdJ_oVFzOZ-NJiw7_6e-v5Vp8R-Q3t8-vFz5_Di-w_adl-FVE7hUP_sQEo0_7Z_xCZp-_EppSFd9_qdO
+_EJ_N_ZylFj5vh-_VjORHxVN4zqvUdlzBDwhp_Y-yglva5_DX-L7dTxFUvM_RiydUkFexVb4_EAkElubV_xy-VFdpvy_Vzz_QtA-th_yQlwMlmDW-RtypSnl
+_4FZVpQRFt_ZF_Ct_Zj_yp_-o-rl_jSa_kO_VYitF__a_2s_ch-v-VaduETl_JFX-d_vM_ypV-l_vc_zQzlwx_dR_o5_-x_aVpWvVyklvczkVlwv-Vadvszk
+Vlwv-Vadvs_vrVpDpSy_Dp__vFmjlvg_kVdvv-Rddvo_vLVpDpS__zpy_9Fpj_ng_kRcvv-Rdtzo_fPVpT_S_Fnpy_DFpj_S_Fnpy_DFpj_S_FoJypSvVvFp
+Dot_oAe_qlAFlFeZ2VxNzyzZxNnLLLLLLLN_0W
+}
+
+skinparam rectangle<<CloudFirewallRules>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudFirewallRules(alias) PUML_ENTITY(rectangle,#4285F4,CloudFirewallRules,alias,CloudFirewallRules)

@@ -1,0 +1,11 @@
+sprite $modifiers_preemptablevm_preemptable [120x120/16z] {
+xTh7ZGKn3CPWTi3-gzsS3RmiQR3-UPluNPtuLKeffPIyCBwwyDxf775rn7Klrr8tRbmgYXktihXnTSHL7N2TSNslstN6zQjMrndNd_MvJhXhkxdkvhgRwswk
+ZIupBlJ02tl2TUbHyryu0LlcSigrp3rnizBbf6kL2wTWPrmRt0MUS-rmLzX-Twru_diqbsAN4so_IxtBWLmwN5PsngN9vHWkRIuBs-_IwJBkqkjocgrsQNUP
+T1bmqUmln8qRDsxEZSJz9-VDsCs5APTQDwMKKahF
+}
+
+skinparam rectangle<<modifiers_preemptablevm>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_preemptablevm(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_preemptablevm,alias,modifiers_preemptablevm)

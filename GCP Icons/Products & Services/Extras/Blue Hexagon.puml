@@ -1,0 +1,13 @@
+sprite $BlueHexagon [256x256/16z] {
+xS-n0K000CJ0BxF_n4gj2YItmUso94cI90aFSUy1t7i0znv0tWTv7-HzaFT1tWTv7_gh-o3lGtzr7_gh-z1VtGTv7_gh-z1VtOV-wZx8-z1VtOV-wZwu-_sH
+zw6_kW_zrNsGzw6_kW_zrNteh-w3l0_zrNteh-v3VtKVv7teh-v3VtKV-glx8Ez3VtKV-glxuExtHzw7_ke-z5VtmTtlZxmF_TLzwA_kWxmF_TLzwA_kGtzr
+7-HzwA_kGtzr7zpz_iZxq5_TX_xgFhZx_P7teR-w3_tLVLX_rFH_1FedIP8aIIRlw__hh-vl_TNzhR-wlxdx_IVlR_tL_StTxpztl__a_Qs_kh-v-_tdxlUV
+lB_rL_StTx__tFt-a_Ut_kh-vkxtdxlVV_B-rb_Ttzpz_dFt-q_Ut_gh-vkxtt_kVl_9-vkxtt_kVl_9-rj_TNzpz_lFtUy_UN_hh-vlxdx_kVlz9-zl_TNz
+pTtlFtU__-JzhR-wlxdx_UVkzv-yl_LNzpTtl__S_VwJzpTtl__S_VwJzpTtl__a_KtUt-JzJTxVvjvla_UtQVUdr-UJ94cI90S
+}
+
+skinparam rectangle<<BlueHexagon>> {
+  BackgroundColor White
+}
+
+!define GCP_BlueHexagon(alias) PUML_ENTITY(rectangle,#4285F4,BlueHexagon,alias,BlueHexagon)

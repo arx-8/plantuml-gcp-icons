@@ -1,0 +1,17 @@
+sprite $CloudMemorystore [256x256/16z] {
+xCyn0OC000InZl6lk1PW0U0-3l8xR6PcPcPcPjoalOVs7jfxYFU9zudtYVU9zudtsJ_T9zvd_tIV_TDzza_tYVVPFzrd_tIV_TDzudtsJ_VPFzsdtTzVlC_-
+wJxxf_l4--oVxhD_ki_-wJxnFlkd--oVxhD_ka-yp_xfFlkd--oVxXFlit-wp_xfFkt-_k9zplt_xDl93OGm44JHyZAuyezu8a3ogN_9vawB_mxi6DXbKemv
+Fr_p-Ktw-Hnp_i_FzvZpyq6VtvoVB_hy9lryab4_tvJW1Hjzkj-9_fRYD-DVXNxd-NyEyHlnZvV9yamZ_kPYlxFyAyLln3zTxdUGlpl5ZxnoRYzRrfSPyQ-x
+_TEr_lSq4_vkoky8lsFy9lmFw3Vlduxn6_0t5_lVwqpurzt-nx3VwFUkGV-SO1lqD-Vu3VXNWj-O_-SSl-lzmnb-C_xc8B_h_Il6Ry8_7UHtkR_xQdypwUT_
+ELqRWwF02_ddnjoZO_rzOspfHFy-fPthVxOE_YFz-mV_iVwsDNIkVstCz1Fz-mV_rB7-iNNmatv-YL7RcZpMttMrVwhUhnp_Gjz_yFw6-9NY7xhQ_yFMGqJu
+b-xsDt0zL81_ADDVjDJWgV2-zz7-9SAl67-3_SByxmT_RHtfVtIh_tspyZZEtn6_KlnJ4Nv1_aU8Nod-bk8NSF-xS_3NbGB-gQlzIu3_FRJStnY_Gln3MNxL
+-dzY_ChmByNvLUblaF_VpXqK00W3G0oBVzLeu0NRjGvYeDF_Y_pzR_BtVyhV_spj_vU__sV-_h_v-r-l_U_pUzSsFxzjVdxZVF9FyzdcvxVDps-SppO_lsr-
+VkDyya_psURdjytFRvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6-MppyzlcvpVEPvkVtpYVSJxZVCRvsDPZd8zjFVWz
+lggggggggXu
+}
+
+skinparam rectangle<<CloudMemorystore>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudMemorystore(alias) PUML_ENTITY(rectangle,#4285F4,CloudMemorystore,alias,CloudMemorystore)

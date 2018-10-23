@@ -1,0 +1,11 @@
+sprite $CloudDataflow [64x64/16z] {
+xPS72WH120Jd1_x_jPVp5VH8NRvjuhQKB9FKSQ_QQD8b-Y1sCtrMS2DVR3OI53gj34179Jehq5a9p_Aqo61Np-yUI-8vGKNDqyVlExzvTI0MyKiBmX6_usC2
+2i9dvlC2Cu-H-NUK0c0b7gnw3izYFilpl5Pi0gxNdoAC4z-jZvQN_s_NJ-wVFZzlkZ-Ur-llto__VlhtszOFMRzq_VJrs_SFB47_KFyy3Btqppc3dz_y_EZd
+Lpy_s_bz3G
+}
+
+skinparam rectangle<<CloudDataflow>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudDataflow(alias) PUML_ENTITY(rectangle,#4285F4,CloudDataflow,alias,CloudDataflow)

@@ -1,0 +1,10 @@
+sprite $modifiers_sharedcoremachineG1_shared [120x120/16z] {
+xTf50GCm44N1TV3zksqlPSRGl6De16Jh94cIb2_tDDi2pa_grasQmFbP0xjSBfVBvTQL7kn-xDQs1curSQkQkBMMMpExtDgN9vlRvNAvN2wtzitjShbSBfUR
+kcmYbvjMRbPparPk6hZxFd7zBt2vN2wNsmOsN_S7kOkvJKcIj04
+}
+
+skinparam rectangle<<modifiers_sharedcoremachineG1>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_sharedcoremachineG1(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_sharedcoremachineG1,alias,modifiers_sharedcoremachineG1)

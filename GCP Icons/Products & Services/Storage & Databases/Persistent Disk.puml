@@ -1,0 +1,15 @@
+sprite $PersistentDisk [256x256/16z] {
+xTq5iWD70CJG3hbq_mk7UNuu6Mz5qWdypBIz-zDLLLLLLLKLRygcFxFfpspwCpaVv7oGyq7E1paVv7p8h-Q3d0_vrNp8h-P3VZKVv7p8h-P3VZKVyglv8ET3
+VZKVyglvuERdHyw7_6e-v5VpGSw7_6e-v5Vp8R-Q3t8-v5Vp8R-Q3_dLV93p8R-Q3_dLVCYlveES3_dLVCYlveERdnyv7wxxzo_skdnn-F_voN-1_s0_5_WF
+zkVd0l_HVl9Vu3_OJ_uB_0VxkS1_j9_y5_WFzfF_0l_1VlB_PXZytE6peyzVVpV-rTxb__kCAtuiVdQM7u-VdU7nv-Vak_paF_WgFs_rNt__UtRmPNuEligV
+duClyvF_uAlyRCkFry_oO_QZz_EVzJf2vJ-xu7zy-VFdp__NVXr4uB-5p9-_vxZy-VFddzk_9_glVlyphp__jitgpx_lSlhpxuUS_kN_8QD_Fq_Wpt_t3v2l
+lnXN_SyRV7clVox_xFupatyVPV7dtyTP_Cl_SGv_npzt_Bjr_o5_-o_vst_At_wPRVylV_kV-Tl_pT_-jMp_FV_z4o2y_htkyqSd037pyq_Et_Ah-PkRdtzk
+Vlx9-PkRdtzkVlx9-Lj-DNzpy_FFpSy_EN_Bh-PlRdx-kVdv9-Tl-TNypStFFpS__-JyBR-Qlxdv-UVcvv-Sl-LNypStF__S_FoJypStF__S_FoJypStF__a
+_4tEt-JypSO_a-dFRFmpdVxiyVYggggggghw2W
+}
+
+skinparam rectangle<<PersistentDisk>> {
+  BackgroundColor White
+}
+
+!define GCP_PersistentDisk(alias) PUML_ENTITY(rectangle,#4285F4,PersistentDisk,alias,PersistentDisk)

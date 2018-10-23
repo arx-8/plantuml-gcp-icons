@@ -1,0 +1,11 @@
+sprite $modifiers_customvirtualmachine_custom [120x120/16z] {
+xTe5ZaCn48DXty3tFsrHL8qoIWFZ1_u5kstWApDEcdFESLDLQap4aYAM5B7aeLmMT6dNhbsxZN5y2_FojRqkW64NmAYB2HVZBYPSZBkOS37kOiB5ULs6-bs6
+fboxTcCLRWuNkzZgPd21IvLBnUDaFjsktTZGw0bSvci71i4kbwilAtQw_DVjM9YwWvV7zBxfbCPekkZgxt_jshLhj_707YU5_zUwsHF1pu75RekDhN3HSf4q
+vJ9raJRfHeXY5yWRS0ESk75ejGkfoq8NvIwrRc2BN9IxLBkGkjpiHbZaGkho1YxlwxBKvLrTtiIbrcMvw_VTTktQzUz5As100kj-TosGSTASS-u9
+}
+
+skinparam rectangle<<modifiers_customvirtualmachine>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_customvirtualmachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_customvirtualmachine,alias,modifiers_customvirtualmachine)

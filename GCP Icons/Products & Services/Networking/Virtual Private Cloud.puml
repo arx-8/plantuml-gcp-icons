@@ -1,0 +1,15 @@
+sprite $VirtualPrivateCloud [256x256/16z] {
+xTrLaYn70CNGQzR-DsncEn_dH4LB-Yyu0qq9lO-lgggggggADqi5FsVHdxFeprdqv-HyaFD1pWSv7-HyaFCXlveFSZxaL_CXlveF-TLyaFCXlveF-TLyoA_c
+WvmF-TLyoA_cWvkV7paVyglva5_D1paVyglva5_DX_ngFiZva5_DX_ngFkHNyq7EX_ngFkHNyo6_cWzoFkHNyo6_cWzkVdxaV7WZ_xTxJzz-_j7t_JT_p9zt
+z0zyQa_nV_-vHz_tyuf-RlAVxy_FNVxp_UI_oN--d_mt-S_tSvV_V3_vR_AVx-Us_sBt_Ro-d_p7CFWvynr-yX_u4Z_v3to9dsly_E_js-_FlPMV4_-LN_-V
+hvGVcv_y1xx4pu4lyUVd0l_Q-FVLU-NGQyn_E7U13pzy_xV--wgFztGuyd3qPtRmt_Xl-FupZhnxUtZzB3zcFte_Pdz-BFxy-VFdpvy_V_xy-VFdx_CFkNzU
+Vtxrv__vzrlgyQ_6FpVd-7Vp7vh_Ovt_bR_vd_d_dilV_FVMVrZN_-Hl_L_-rl_cR_sxRV-7_Et_ah_zd_At_vbj_x_yxV-Pl_r_yxV_zVjwmV7lzh_l-n_o
+Vt1kVlx9-Lj-DNzpy_FFpSy_ENzpy_FFpSy_EN_Bh-PlRdx-kVdv9-Tl-TNypStFFpS__-JyBR-Qlxdv-UVcvv-Sl-LNypStF__S_FoJyxVyQlxcvkUVcvz_
+SlxcvkUVcvz_SlxcvkUVdB_9-PkSlrduvoJwSnR-EOt-tEFnLLLLLLLLzHC
+}
+
+skinparam rectangle<<VirtualPrivateCloud>> {
+  BackgroundColor White
+}
+
+!define GCP_VirtualPrivateCloud(alias) PUML_ENTITY(rectangle,#4285F4,VirtualPrivateCloud,alias,VirtualPrivateCloud)

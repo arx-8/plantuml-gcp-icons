@@ -1,0 +1,11 @@
+@startuml
+!include ./common.puml
+!include ./GCP Icons/Products & Services/Storage & Databases/Cloud Bigtable.puml
+!include ./GCP Icons/Products & Services/Big Data/BigQuery.puml
+
+GCP_CloudBigtable(foo)
+GCP_BigQuery(bar)
+
+foo -> bar
+
+@enduml

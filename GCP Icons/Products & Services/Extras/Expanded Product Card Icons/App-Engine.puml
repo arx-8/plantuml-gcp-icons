@@ -1,0 +1,10 @@
+sprite $AppEngine [64x64/16z] {
+xTO53iKm60BWtO3xd_RfFoKqT4HcHAhVN3eSE4y08EJ0QJqg9_MOSZ1__EJ7Zqq2NGbq9UH0o84-BhfCBdfDBWSyhqTChiSCtnoqUVy6QfpRrTddiKhR0zWU
+7uIlcNnQlFlgv0EWBlPpLNjWoJlyp5f-g1pQPzTF-urHNZv-c4DUn7t-hEU_U_UpiNVl-pqVa5xESwWHV7-p7q3s0zhp0-H7DVy1f-i7Dm6l9Bf2-81vyWO
+}
+
+skinparam rectangle<<AppEngine>> {
+  BackgroundColor White
+}
+
+!define GCP_AppEngine(alias) PUML_ENTITY(rectangle,#4285F4,AppEngine,alias,AppEngine)

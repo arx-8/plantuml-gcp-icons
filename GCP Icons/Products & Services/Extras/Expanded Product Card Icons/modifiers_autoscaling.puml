@@ -1,0 +1,11 @@
+sprite $modifiers_autoscaling_autoscaling [120x120/16z] {
+xTIvKKLH34H1PQ3yesNVBMYzkWB-77-glQbFfPHIIgal3jbvgiv3Tjwwwwp3SUFM9VrdDsxSk77ZTg-u_T22sqyTT_kbmsw_TTJj3nrq-rF7tFxIbjjdN8VT
+TTXTX-Ukm-uwF7STTjVXkUkmkmxFNOVTTNZkEkokmtFNuS-nwx2x3hlhiBiEkmlm0HTXTnrsrs5t7NRNOVz9XzrrUEuwxAx3SzTXTnsUkmwxw_3OTTZTEUok
+m-gEONJdCBfp6DqvZEuS1fVQSclBhIstjjpQSclBhIstmFr1tvp5ZLjRRlrxrsLt7NOtfPHIIlS
+}
+
+skinparam rectangle<<modifiers_autoscaling>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_autoscaling(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_autoscaling,alias,modifiers_autoscaling)

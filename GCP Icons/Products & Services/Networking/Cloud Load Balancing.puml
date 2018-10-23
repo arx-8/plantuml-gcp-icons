@@ -1,0 +1,15 @@
+sprite $CloudLoadBalancing [256x256/16z] {
+xTn5WXjR0CNG6t9h_nl-Z2axN6x7aiQFph1mNrzLLLLLLHLtIma_PjCVi-cFsVJ7v7oGyq7E1paVv7oGyo6_cWzoFkHNyo6_cW_vrNoGyo6_cW_vrNp8h-Q3
+d0_vrNp8h-Q3cvyVEH_og_cGNyq7EH_og_cGNys7_6e-oFcGNys7_6e-v5VpGSw7_6e-v5Vp8R-Q3t8-v5Vp8R-Q3sv-VkHyoA_cGtur7rw5_sxVrRkVtR_l
+xEN-P-6H_9Sx7oO_p-id_vdyn_TpBl_n_UG_a__uVlAVoNzyF_blXi7FRRx3J_whOV6J_qfu_EmO7dz-ZdoNduVst_zS77gk-z_7xkJdvNAp_TNxowtWFlxN
+VI1puJKwy5N-_1puCZ_v3toLdstvyVfPVin-z7w4_lpdztu_jFVo_m_Dxhze_Vdpvt__K_hpNquPy_tbpvy__zp-wVtp-lDlswp-_FipYJ__-G_0Nww_syB_
+kZRcEEhwc3FuE_zjftTVT6Vu_PUizCWlWEncLyTy-QYpptgw__8b_YyQTSb_mb5j_kN_Vox_yd-SoRzhMVpvTpsBV_clv_0l_wqC_dqgWL_ktwTxzliV-qpF
+VlzB-U_3B-Vddvo_vLVpDpS__zpy_9Fpj_ng_kRcvv-Rdtzo_fPVpT_S_Fnpy_DFpj_S_Fnpy_DFpj_og_cRcvz_Rdx-oVbRVZL_S_FppytFFpb_ow_cRsv-
+_hdv-IVdR_dL_CtDppytF__a_2s_ch-v-VddvkUVdB-v-VddvkUVdB-v-Vadvszo_YRdRtB-DhT-cvo_JQS_zl3ugggggggg-XK
+}
+
+skinparam rectangle<<CloudLoadBalancing>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudLoadBalancing(alias) PUML_ENTITY(rectangle,#4285F4,CloudLoadBalancing,alias,CloudLoadBalancing)

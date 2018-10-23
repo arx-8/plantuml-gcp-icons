@@ -1,0 +1,10 @@
+sprite $modifiers_standardmachine_standard [120x120/16z] {
+xTfL0KKn342nEfX_jOyPBuzo_eOnq7XAaYIbXSl0dikWNYhMJIkLWJrNdSlbShbSxlyh_-_DT-_bSYEN6z6R6xdSQCZbVjXBdzh03IwNo-LokLmkbylbShbS
+BdT-9RfSBfVBvUQ1pTTj81Snjob9alO
+}
+
+skinparam rectangle<<modifiers_standardmachine>> {
+  BackgroundColor White
+}
+
+!define GCP_modifiers_standardmachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_standardmachine,alias,modifiers_standardmachine)

@@ -1,0 +1,10 @@
+sprite $ComputeEngine [64x64/16z] {
+xTT50S0m50FGEeX_jME6Cl_aCdp3ede6SwxhU1pG1tgFIZqzd1B80NhDVzCciiSHlVy12FEGxXFzVxoInDDhJh8w5ERf2_v_-l3-X_r7e5TXFlJ_nVNseG-x
+G2Vp5_hG-Vi8
+}
+
+skinparam rectangle<<ComputeEngine>> {
+  BackgroundColor White
+}
+
+!define GCP_ComputeEngine(alias) PUML_ENTITY(rectangle,#4285F4,ComputeEngine,alias,ComputeEngine)

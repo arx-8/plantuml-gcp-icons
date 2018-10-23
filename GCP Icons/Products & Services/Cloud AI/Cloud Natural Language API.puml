@@ -1,0 +1,15 @@
+sprite $CloudNaturalLanguageAPI [256x256/16z] {
+xTqtcXjH30JXbfklxdzXUMaYo6BDOrVbk-JFQ2oGly_CpCpCp8ndgme-rwAVQz7FjUZdolbGpeToFfJpePmFvNpGNys7SZxeh-Q3_ce-wA_cGpaVz5VpGNyr
+7_HNyw6S3_gh-Q2_cW_TVFsKyq5_DH_qL_EXd0_wg_cWlveF-glvKCu7_TLyq5_D1_tLV2ZdW_vgFZozFsCN_z7IVr_W7-r7_mB_O3yB_AFzw5_W7-n7_mB_
+O3yB_8Fz-bdW7-r7_mB_O3_w5_W7-rdcp__u_VKZ5hf-Tef_XSt-vopmZ_QZVu5_i1_zlstzU-K_kfRzBF2FzgD_WN-m7_qB_8Fzw1-ZmS_Cx_2ZV-2N-D4_
+y4ly3FmIltu6VesVv_DV_n7FvMVezEi_S_e7VecVWL_Yry_0h_6ZV-2N-4cYdru_qK-pdte_TpNdl_hlMlpwzUlNhr-_VltwzUlNdsv_Rd_H_T-xwkj_-gkl
+_-klll-dt_l_-dt-vslTVf__Ivi_-dt-Mx_lVzor-FNx_fz-t__Lx_llRVCVz3l_HR_pd_IFFVBzt-hvV_gT_wd_JtfCl_EFdN_TElzTl_iVzBl_HR_xZzhs
+V-bt_vz-zr_gT__ja_m0rnWBNLDFptV_Txhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_qL_DJxhv-jFDrvzoVgA_cfzqy_Mdcwy_vVn4VpK_wURh
+JpTVVyhvIJTVVxhv-bFEJxhv-bFEJyhvIJa_QU7FbUZdMlXpDVgvLuytCpCpCpEpJm
+}
+
+skinparam rectangle<<CloudNaturalLanguageAPI>> {
+  BackgroundColor White
+}
+
+!define GCP_CloudNaturalLanguageAPI(alias) PUML_ENTITY(rectangle,#4285F4,CloudNaturalLanguageAPI,alias,CloudNaturalLanguageAPI)
