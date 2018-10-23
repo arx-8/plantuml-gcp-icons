@@ -16,8 +16,8 @@ _RNx-ultsJ_TfztVNxk_ltYV_TDzsltzjVlxY_Tfz_VNxkyltgVTtr-yJxnFl4-yZ_OUyJxQUt1yVcPc
 
 
 !definelong GCP_CloudIAM(alias,name)
-skinparam actor<<name>> {
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-PUML_ENTITY(actor,#4285F4,CloudIAM,alias,name)
+PUML_ENTITY(rectangle,#4285F4,CloudIAM,alias,name)
 !enddefinelong
