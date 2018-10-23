@@ -14,8 +14,10 @@ slpvjVdpY_Dfy-VNviylpcV-D9ysVtvj_lpYVEPFysdpvzVcpo_EP_uqdpP_Vct-_E9yva_pQVFdr-RF
 vnFdewr7d8-s7jmUlzPQQwsrrbhh0m
 }
 
-skinparam rectangle<<PredictionAPI>> {
+
+!definelong GCP_PredictionAPI(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_PredictionAPI(alias) PUML_ENTITY(rectangle,#4285F4,PredictionAPI,alias,PredictionAPI)
+PUML_ENTITY(rectangle,#4285F4,PredictionAPI,alias,name)
+!enddefinelong

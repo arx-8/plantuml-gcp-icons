@@ -11,8 +11,10 @@ E9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv-Mtpynldat-QppO_lsr-VkDyya_psURdjytFRvnF_ca-
 npWVsthmv_5LLLLLLLNr3m
 }
 
-skinparam rectangle<<GPU>> {
+
+!definelong GCP_GPU(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_GPU(alias) PUML_ENTITY(rectangle,#4285F4,GPU,alias,GPU)
+PUML_ENTITY(rectangle,#4285F4,GPU,alias,name)
+!enddefinelong

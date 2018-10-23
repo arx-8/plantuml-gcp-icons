@@ -15,8 +15,10 @@ X9l9lwZPCPcGRqIbFkNVxSz10O0m04KX-gSsWaVTtgS1L_CktcV_T9zsVt_j_lxYVVPFzsdtzzVkxo_U
 U9_zqttQ_Vsr-_kBzza_tQVTtr-xlxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGU_py_CpCpCpCm3
 }
 
-skinparam rectangle<<IdentityAwareProxy>> {
+
+!definelong GCP_IdentityAwareProxy(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_IdentityAwareProxy(alias) PUML_ENTITY(rectangle,#4285F4,IdentityAwareProxy,alias,IdentityAwareProxy)
+PUML_ENTITY(rectangle,#4285F4,IdentityAwareProxy,alias,name)
+!enddefinelong

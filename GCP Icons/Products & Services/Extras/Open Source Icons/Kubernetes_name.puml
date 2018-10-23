@@ -38,8 +38,10 @@ P6MLbRk1xnhpHqB-FA_MrIz8e1ZzA6WlMcL1N7GThNxql-q1FLe52PIY7mNjHQliZOil91xq5pjAjf6l
 Vl3zNVeUV38kTCJqh-snlTHO-eMux6-kBk-7VDklpUoPnj8lmsLx0vNrnwKT-VZul9xeA_tkTDbVeBA2kFvAXwicgVgsukzDb_qjUygz7TT_0m
 }
 
-skinparam rectangle<<Kubernetes_name>> {
+
+!definelong GCP_Kubernetes_name(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Kubernetes_name(alias) PUML_ENTITY(rectangle,#4285F4,Kubernetes_name,alias,Kubernetes_name)
+PUML_ENTITY(rectangle,#4285F4,Kubernetes_name,alias,name)
+!enddefinelong

@@ -12,8 +12,10 @@ lpYVDdz-RVxyudpcJ_Dfy-VNviylpcV-D9ysVtvj_lpYVEPFysdpvzVcpo_EP_uqdpP_Vct-_E9yva_p
 nFbewy7fyMkjjTPQQwsr_W4
 }
 
-skinparam rectangle<<SecurityKeyEnforcement>> {
+
+!definelong GCP_SecurityKeyEnforcement(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_SecurityKeyEnforcement(alias) PUML_ENTITY(rectangle,#4285F4,SecurityKeyEnforcement,alias,SecurityKeyEnforcement)
+PUML_ENTITY(rectangle,#4285F4,SecurityKeyEnforcement,alias,name)
+!enddefinelong

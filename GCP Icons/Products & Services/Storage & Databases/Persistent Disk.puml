@@ -8,8 +8,10 @@ Vlx9-PkRdtzkVlx9-Lj-DNzpy_FFpSy_EN_Bh-PlRdx-kVdv9-Tl-TNypStFFpS__-JyBR-Qlxdv-UVc
 _4tEt-JypSO_a-dFRFmpdVxiyVYggggggghw2W
 }
 
-skinparam rectangle<<PersistentDisk>> {
+
+!definelong GCP_PersistentDisk(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_PersistentDisk(alias) PUML_ENTITY(rectangle,#4285F4,PersistentDisk,alias,PersistentDisk)
+PUML_ENTITY(rectangle,#4285F4,PersistentDisk,alias,name)
+!enddefinelong

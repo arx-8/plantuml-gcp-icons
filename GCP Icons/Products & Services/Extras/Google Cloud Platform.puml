@@ -31,8 +31,10 @@ g-5t1JU_3N14s-yqG5Mm_GfWLxBx2Y3QVlxlQhPV0QpHx9VilWAe2hPV0HpzzjEQMm5LmUuhW7sA_VHt
 jK7VkqzhadPTpvSrC4Pr2MvzO-3uwL0d-psr1mS2000008ByhGUvsW40000000000000000000000000W
 }
 
-skinparam rectangle<<GoogleCloudPlatform>> {
+
+!definelong GCP_GoogleCloudPlatform(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_GoogleCloudPlatform(alias) PUML_ENTITY(rectangle,#4285F4,GoogleCloudPlatform,alias,GoogleCloudPlatform)
+PUML_ENTITY(rectangle,#4285F4,GoogleCloudPlatform,alias,name)
+!enddefinelong

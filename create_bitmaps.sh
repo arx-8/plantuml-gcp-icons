@@ -5,11 +5,13 @@ set -ex
 google_blue="#4285F4"
 
 TEMPLATE=$(cat <<EOF
-skinparam rectangle<<__SPRITE__>> {
+
+!definelong GCP___SPRITE__(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
 }
-
-!define GCP___SPRITE__(alias) PUML_ENTITY(rectangle,$google_blue,__SPRITE__,alias,__SPRITE__)
+PUML_ENTITY(container,$google_blue,__SPRITE__,alias,name)
+!enddefinelong
 EOF
 )
 

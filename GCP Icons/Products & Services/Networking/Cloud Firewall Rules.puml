@@ -8,8 +8,10 @@ Vlwv-Vadvs_vrVpDpSy_Dp__vFmjlvg_kVdvv-Rddvo_vLVpDpS__zpy_9Fpj_ng_kRcvv-Rdtzo_fPV
 Dot_oAe_qlAFlFeZ2VxNzyzZxNnLLLLLLLN_0W
 }
 
-skinparam rectangle<<CloudFirewallRules>> {
+
+!definelong GCP_CloudFirewallRules(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudFirewallRules(alias) PUML_ENTITY(rectangle,#4285F4,CloudFirewallRules,alias,CloudFirewallRules)
+PUML_ENTITY(rectangle,#4285F4,CloudFirewallRules,alias,name)
+!enddefinelong

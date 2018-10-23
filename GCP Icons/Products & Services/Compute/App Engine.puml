@@ -17,8 +17,10 @@ cWzkVdxS_Fp8-P1VpGStFpzkVdxaVCYlveERdnytFpzoFkHNyy7Dpu-Rdnyv7_Ah-U3cvyVDpu-S3sv-
 jTPQQwsrrdu1
 }
 
-skinparam rectangle<<AppEngine>> {
+
+!definelong GCP_AppEngine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_AppEngine(alias) PUML_ENTITY(rectangle,#4285F4,AppEngine,alias,AppEngine)
+PUML_ENTITY(rectangle,#4285F4,AppEngine,alias,name)
+!enddefinelong

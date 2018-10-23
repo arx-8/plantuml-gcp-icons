@@ -3,8 +3,10 @@ xTT50S0m50FGEeX_jME6Cl_aCdp3ede6SwxhU1pG1tgFIZqzd1B80NhDVzCciiSHlVy12FEGxXFzVxoI
 G2Vp5_hG-Vi8
 }
 
-skinparam rectangle<<ComputeEngine>> {
+
+!definelong GCP_ComputeEngine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ComputeEngine(alias) PUML_ENTITY(rectangle,#4285F4,ComputeEngine,alias,ComputeEngine)
+PUML_ENTITY(rectangle,#4285F4,ComputeEngine,alias,name)
+!enddefinelong

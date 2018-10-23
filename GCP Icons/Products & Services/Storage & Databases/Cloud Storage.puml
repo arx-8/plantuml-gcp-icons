@@ -8,8 +8,10 @@ NvpF_6a-RVxyslpvnVdCd-RJvi-lpPzVd4-RFxysVtvnFlEd-RJvyslpvnVdCt-QJvi_lpP_Vd4-ywVv
 vzFcpw_Ddr-SJvi_lpYVE9yudpWVRJtYVBJruFVujTPQQwsrrbeF
 }
 
-skinparam rectangle<<CloudStorage>> {
+
+!definelong GCP_CloudStorage(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudStorage(alias) PUML_ENTITY(rectangle,#4285F4,CloudStorage,alias,CloudStorage)
+PUML_ENTITY(rectangle,#4285F4,CloudStorage,alias,name)
+!enddefinelong

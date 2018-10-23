@@ -16,8 +16,10 @@ UjDRf-O_W1NAz9ETDLe0flElSlUF_WRes-Vsvw00G1Y0eX3zKzl1Ysxlqu1BsF-TTdz_yJxj_lxQ_Vt5
 hztVNxpF_ka-xVx-sltznVlid-xJxk-ltTzVl4-xlxzsVt_nFkt-_k9zudtYVU9zjFU8zz7UWz_dPsPcPcPcvW4
 }
 
-skinparam rectangle<<CloudDataproc>> {
+
+!definelong GCP_CloudDataproc(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDataproc(alias) PUML_ENTITY(rectangle,#4285F4,CloudDataproc,alias,CloudDataproc)
+PUML_ENTITY(rectangle,#4285F4,CloudDataproc,alias,name)
+!enddefinelong

@@ -16,8 +16,10 @@ eEr9Bu0TGKXdscBrYQeN02bgcuS0_b5epuAsPxu0tJX_PgSS13v0dxmANPvc0Lx_7k57G_-Tj_-vK0K7
 RFVxs-xtDzwd_tIVxNv_s_t-nllqd-wptUzlkz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkCzndlOtkFyJwsz-3n-IH9aYJ93m
 }
 
-skinparam rectangle<<CloudDataflow>> {
+
+!definelong GCP_CloudDataflow(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDataflow(alias) PUML_ENTITY(rectangle,#4285F4,CloudDataflow,alias,CloudDataflow)
+PUML_ENTITY(rectangle,#4285F4,CloudDataflow,alias,name)
+!enddefinelong

@@ -11,8 +11,10 @@ qUlU6DZK_JVxfOxM65xs7rqlVcD-zl_5Bsz-_BBcP_zp_FBcnozplXI_DL_oviSlRtxyCkTByLlp9Mz-
 nozplXI_DL_oviSlRtxyCkTBtlpuvSsFN-PyoPiVlypvaZbVCkTBvdn9tdf9vdn9Tlfpo-DJIYcbb59AAVqC
 }
 
-skinparam rectangle<<DataStudio>> {
+
+!definelong GCP_DataStudio(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_DataStudio(alias) PUML_ENTITY(rectangle,#4285F4,DataStudio,alias,DataStudio)
+PUML_ENTITY(rectangle,#4285F4,DataStudio,alias,name)
+!enddefinelong

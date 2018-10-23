@@ -18,8 +18,10 @@ VnzvALxF3_YYY5ti_xaTEY0060I047ZzKo_6r8S6nxa3Rk2JVvhFDZ-_RNv-utpoJ_FPvkUtpSzld4_-
 sURdDyvddCyudt4-jlKOvsDR3ux7LrLLLLLLrGS
 }
 
-skinparam rectangle<<CloudArmor>> {
+
+!definelong GCP_CloudArmor(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudArmor(alias) PUML_ENTITY(rectangle,#4285F4,CloudArmor,alias,CloudArmor)
+PUML_ENTITY(rectangle,#4285F4,CloudArmor,alias,name)
+!enddefinelong

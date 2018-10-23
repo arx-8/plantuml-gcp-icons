@@ -15,8 +15,10 @@ jhCEu8tVlrjjTY-d_SCdu-RdHyrl_pa_Rdv-v7p8h-Q3cvyVDpy_SZxaL_F1pS-FcvyVEH_og_dWvkV7
 dnytFpzoFhZv-P7pGSu7EH_aVC2j1-HyGAS_pVJuKaeffPHIIYd_
 }
 
-skinparam rectangle<<ApigeeAPIPlatform>> {
+
+!definelong GCP_ApigeeAPIPlatform(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ApigeeAPIPlatform(alias) PUML_ENTITY(rectangle,#4285F4,ApigeeAPIPlatform,alias,ApigeeAPIPlatform)
+PUML_ENTITY(rectangle,#4285F4,ApigeeAPIPlatform,alias,name)
+!enddefinelong

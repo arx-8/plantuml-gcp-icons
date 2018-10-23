@@ -7,8 +7,10 @@ dtzdtUfV_hFkz2__QJVwzqwt-VFllMxpB_zxtULV_dUxoRydtUBFlsVTub_-PztXN_wdtU1l_tF-vxdv
 L_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_Etzpy_7Fpyq_Etzpy_9FpDpb_a_CtEN-RMxzDpj-crV_hr-EhgggggghgVm
 }
 
-skinparam rectangle<<Trace>> {
+
+!definelong GCP_Trace(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Trace(alias) PUML_ENTITY(rectangle,#4285F4,Trace,alias,Trace)
+PUML_ENTITY(rectangle,#4285F4,Trace,alias,name)
+!enddefinelong

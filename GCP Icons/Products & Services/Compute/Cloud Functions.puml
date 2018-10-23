@@ -11,8 +11,10 @@ d7LycDA65m2Pb3Mx-Rd-JQx_fFYj-P8tFtvvy-ENEL_oviSlRtxyCkTByLlp9Mz-_FBcnozplXI_DL_o
 RtxyCkTByLlp9Mz-_FBcnozplkJDZr_U_FXbpfUy-V7Bd2-PyoLplcJEb-IjbsJEbsIbN_Vs-9HIIYcbb59AFm8
 }
 
-skinparam rectangle<<CloudFunctions>> {
+
+!definelong GCP_CloudFunctions(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudFunctions(alias) PUML_ENTITY(rectangle,#4285F4,CloudFunctions,alias,CloudFunctions)
+PUML_ENTITY(rectangle,#4285F4,CloudFunctions,alias,name)
+!enddefinelong

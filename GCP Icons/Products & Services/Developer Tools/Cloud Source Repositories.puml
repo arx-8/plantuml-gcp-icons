@@ -14,8 +14,10 @@ _g_uRFFps-RdDyvdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv
 dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
-skinparam rectangle<<CloudSourceRepositories>> {
+
+!definelong GCP_CloudSourceRepositories(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudSourceRepositories(alias) PUML_ENTITY(rectangle,#4285F4,CloudSourceRepositories,alias,CloudSourceRepositories)
+PUML_ENTITY(rectangle,#4285F4,CloudSourceRepositories,alias,name)
+!enddefinelong

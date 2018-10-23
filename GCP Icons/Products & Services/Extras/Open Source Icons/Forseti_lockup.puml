@@ -12,8 +12,10 @@ MVeRO-e7r8-ESqSqmXsJy_BwuXYvqlJ8sAgOQXWUidu-r1YJ6ZboS637H3am0WxYt4mNThawnDJUhSfg
 jj3xPanX6cbH_pP3OyboGzU68ZseojQedVEI6OMfsoBUAQRRyiOz0m
 }
 
-skinparam rectangle<<Forseti_lockup>> {
+
+!definelong GCP_Forseti_lockup(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Forseti_lockup(alias) PUML_ENTITY(rectangle,#4285F4,Forseti_lockup,alias,Forseti_lockup)
+PUML_ENTITY(rectangle,#4285F4,Forseti_lockup,alias,name)
+!enddefinelong

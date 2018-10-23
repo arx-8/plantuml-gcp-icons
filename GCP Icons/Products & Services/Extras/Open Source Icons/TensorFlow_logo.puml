@@ -14,8 +14,10 @@ Y2N8cnambY1lPe3OWGHbW5Y2l9a1OWdoPWQCdSWtEP7FKuayommGIv0tCs0iGTxC0B4O-N_D0B45UPOP
 f4YH8aMA52bIf4YH8aMA52bIf4YH8aMA52doaym18ZFHkC04ueOIY1jC86ummRYX1E864uWRJ21kCC6ueGJY1XE86qmmRZ21kA44uWOJY1jCC6umlu3u1m
 }
 
-skinparam rectangle<<TensorFlow_logo>> {
+
+!definelong GCP_TensorFlow_logo(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_TensorFlow_logo(alias) PUML_ENTITY(rectangle,#4285F4,TensorFlow_logo,alias,TensorFlow_logo)
+PUML_ENTITY(rectangle,#4285F4,TensorFlow_logo,alias,name)
+!enddefinelong

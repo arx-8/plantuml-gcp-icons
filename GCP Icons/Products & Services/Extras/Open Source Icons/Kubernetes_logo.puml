@@ -27,8 +27,10 @@ AMAlep-Gc_eG9_n-S9pMtLJ_Wwtg7k0JG7GFld2UXn4izptymdWMu8m5T6sw2-yrlGWpm9wrLtAc5tlS
 Fl4-yJxnFl4-Fhi_
 }
 
-skinparam rectangle<<Kubernetes_logo>> {
+
+!definelong GCP_Kubernetes_logo(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Kubernetes_logo(alias) PUML_ENTITY(rectangle,#4285F4,Kubernetes_logo,alias,Kubernetes_logo)
+PUML_ENTITY(rectangle,#4285F4,Kubernetes_logo,alias,name)
+!enddefinelong

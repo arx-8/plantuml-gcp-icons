@@ -11,8 +11,10 @@ J-lxtnPctmiRz3ykwt-r-_U_0f7zp_rs_S-d__qJaVCFu_xp3u1c_gL7phzqGdwaVdukwVxpJy0cyszd
 FysdpPzVcp-_E9_vqtpQ_Fcr-VEByva_pQVDdr-RFxyudpP_Vct-_E9yslpvnVd4-SJvnFbewn7dewq7Fy87kjpDvwsrrbfhhRNM5G
 }
 
-skinparam rectangle<<CloudToolsforPowerShell>> {
+
+!definelong GCP_CloudToolsforPowerShell(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudToolsforPowerShell(alias) PUML_ENTITY(rectangle,#4285F4,CloudToolsforPowerShell,alias,CloudToolsforPowerShell)
+PUML_ENTITY(rectangle,#4285F4,CloudToolsforPowerShell,alias,name)
+!enddefinelong

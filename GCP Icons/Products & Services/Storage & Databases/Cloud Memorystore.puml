@@ -10,8 +10,10 @@ VkDyya_psURdjytFRvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6
 lggggggggXu
 }
 
-skinparam rectangle<<CloudMemorystore>> {
+
+!definelong GCP_CloudMemorystore(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudMemorystore(alias) PUML_ENTITY(rectangle,#4285F4,CloudMemorystore,alias,CloudMemorystore)
+PUML_ENTITY(rectangle,#4285F4,CloudMemorystore,alias,name)
+!enddefinelong

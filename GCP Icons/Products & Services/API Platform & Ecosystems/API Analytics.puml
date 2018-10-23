@@ -13,8 +13,10 @@ pq41W400127wfpQ1NzMRfG7li_-TU9_zqttQ_Vsr-_kBzza_tQVTtr-xlxzud_tJVThz_RNx-ultsJ_T
 T9zsVt_j_lxYVVPFzsdtzzVkxo_UP_zqdtP_V-t-_k9zza_tQVVtr-xlBzwdtTzVkx-_U9zsVt_nFl4-yJxnFjfxnFjexy7dypCpCpCpCtC1
 }
 
-skinparam rectangle<<APIAnalytics>> {
+
+!definelong GCP_APIAnalytics(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_APIAnalytics(alias) PUML_ENTITY(rectangle,#4285F4,APIAnalytics,alias,APIAnalytics)
+PUML_ENTITY(rectangle,#4285F4,APIAnalytics,alias,name)
+!enddefinelong

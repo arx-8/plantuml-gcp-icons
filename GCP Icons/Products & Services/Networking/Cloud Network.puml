@@ -11,8 +11,10 @@ VtxEl-S3eFpp_HTyWB3n_IS1y4d_MF-nx-tT0G708024mEkVUZ6cyZIu1FG6G1jWpNy-dpP_Vct-_E9y
 yva_pQVDdr-RFxyud_dJVDhy-RNvyulpcJ_DfysVNvi_lpYVDdz-RVxyudpQ_Fd5-SJvnFd4-MZh4UUZhGV7uzTQQwsrrbfhVG
 }
 
-skinparam rectangle<<CloudNetwork>> {
+
+!definelong GCP_CloudNetwork(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudNetwork(alias) PUML_ENTITY(rectangle,#4285F4,CloudNetwork,alias,CloudNetwork)
+PUML_ENTITY(rectangle,#4285F4,CloudNetwork,alias,name)
+!enddefinelong

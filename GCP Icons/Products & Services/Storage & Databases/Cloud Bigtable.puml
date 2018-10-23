@@ -20,8 +20,10 @@ tQ7UVo3x-1VCxhM3Bm3X5uYiJi0dy7EAfHMxxmAW-TMTqg--00lFQRXTVW4OdWY--08yd1ApyK_Xn_SR
 zpVUf_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDxZ_4-jlVWzlaaIP8aoHS
 }
 
-skinparam rectangle<<CloudBigtable>> {
+
+!definelong GCP_CloudBigtable(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudBigtable(alias) PUML_ENTITY(rectangle,#4285F4,CloudBigtable,alias,CloudBigtable)
+PUML_ENTITY(rectangle,#4285F4,CloudBigtable,alias,name)
+!enddefinelong

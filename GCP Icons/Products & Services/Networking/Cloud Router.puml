@@ -12,8 +12,10 @@ d0_nM_F1cny_tlpuCUT3_DPyyER7ZpS_Vipv4Byr7xpvyUFDZnzpFiHlpGTlVlnuy-F7d0_U_FZnviUF
 IYcbz0C
 }
 
-skinparam rectangle<<CloudRouter>> {
+
+!definelong GCP_CloudRouter(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudRouter(alias) PUML_ENTITY(rectangle,#4285F4,CloudRouter,alias,CloudRouter)
+PUML_ENTITY(rectangle,#4285F4,CloudRouter,alias,name)
+!enddefinelong

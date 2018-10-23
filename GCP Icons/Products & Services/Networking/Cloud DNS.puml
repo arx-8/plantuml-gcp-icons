@@ -20,8 +20,10 @@ YfhVR0FSd4PuCwjwO6OU6so0l2Fow_yAFrl_rrz-e3xow_zl-tD003080468_gaNO-ez3KZtQVVtr-xl
 Vt_j_lxYVVPFzsdtzzVkxo_UfztVNxk_ltYVTdz_yJxnFl4-yJxQUyJxQE_1yVcPcPcPcPdv
 }
 
-skinparam rectangle<<CloudDNS>> {
+
+!definelong GCP_CloudDNS(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDNS(alias) PUML_ENTITY(rectangle,#4285F4,CloudDNS,alias,CloudDNS)
+PUML_ENTITY(rectangle,#4285F4,CloudDNS,alias,name)
+!enddefinelong

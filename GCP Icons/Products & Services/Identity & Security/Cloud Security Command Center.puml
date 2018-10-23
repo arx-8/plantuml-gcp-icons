@@ -15,8 +15,10 @@ CWNmpoY0jz3VfUlw9M-F_8HUbX4bL-2Xlmldy_uutl_bBqCwqszAZmU_SnJVzARvl_qv8K0W080WHF_K
 ZVVfFzrdkz_VTh-_yJxzf_jiz_lRxlSttcUxtzzslx_nFjlz_iRxZFSPxpFUn_OUutrixy7ZyqcI94cI7m
 }
 
-skinparam rectangle<<CloudSecurityCommandCenter>> {
+
+!definelong GCP_CloudSecurityCommandCenter(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudSecurityCommandCenter(alias) PUML_ENTITY(rectangle,#4285F4,CloudSecurityCommandCenter,alias,CloudSecurityCommandCenter)
+PUML_ENTITY(rectangle,#4285F4,CloudSecurityCommandCenter,alias,name)
+!enddefinelong

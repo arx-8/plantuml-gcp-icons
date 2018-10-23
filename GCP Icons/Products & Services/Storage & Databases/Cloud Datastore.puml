@@ -9,8 +9,10 @@ zOVDrnyuFz6FvYTillwm-Ve3voVwqVo4pTSVDbz_uFn4FvgViFdwm-Rh3voVw4Vp4pPVVzXy_O7p4pPV
 PcPcPcPczZy
 }
 
-skinparam rectangle<<CloudDatastore>> {
+
+!definelong GCP_CloudDatastore(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDatastore(alias) PUML_ENTITY(rectangle,#4285F4,CloudDatastore,alias,CloudDatastore)
+PUML_ENTITY(rectangle,#4285F4,CloudDatastore,alias,name)
+!enddefinelong

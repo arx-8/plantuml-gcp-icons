@@ -14,8 +14,10 @@ TH05tV_jLMt-_E9yva_pQVFdr-RFByvd_ZIVDdz-RVxyudpcJ_Dfy-VNviylpcV-D9ysVtvj_lpYVEPF
 -VEByudpYVE9yz7M8yv7Mmz-ZrzhhRNMMckjzG
 }
 
-skinparam rectangle<<CloudRoutes>> {
+
+!definelong GCP_CloudRoutes(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudRoutes(alias) PUML_ENTITY(rectangle,#4285F4,CloudRoutes,alias,CloudRoutes)
+PUML_ENTITY(rectangle,#4285F4,CloudRoutes,alias,name)
+!enddefinelong

@@ -13,8 +13,10 @@ rlw_ylV_bx__o_pV-h-zdhx9x_yvlsr-VkDyya_psURdjytFRvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_
 vpVEPvkVtpYVSJxZVCRvsDPZd8zjFVWylggggggggcu
 }
 
-skinparam rectangle<<CloudDataprep>> {
+
+!definelong GCP_CloudDataprep(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDataprep(alias) PUML_ENTITY(rectangle,#4285F4,CloudDataprep,alias,CloudDataprep)
+PUML_ENTITY(rectangle,#4285F4,CloudDataprep,alias,name)
+!enddefinelong

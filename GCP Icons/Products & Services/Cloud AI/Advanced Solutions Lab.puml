@@ -27,8 +27,10 @@ _G4WR06SVpBB3-8hy9bVPO5f_itFWqzR8Bvn012VtCh-HJ_unxO0n3SDm19PO9v_LOVy8Bw9NsE1WVip
 lxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGUP_FkTR-5-CpCpCpCp5m
 }
 
-skinparam rectangle<<AdvancedSolutionsLab>> {
+
+!definelong GCP_AdvancedSolutionsLab(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_AdvancedSolutionsLab(alias) PUML_ENTITY(rectangle,#4285F4,AdvancedSolutionsLab,alias,AdvancedSolutionsLab)
+PUML_ENTITY(rectangle,#4285F4,AdvancedSolutionsLab,alias,name)
+!enddefinelong

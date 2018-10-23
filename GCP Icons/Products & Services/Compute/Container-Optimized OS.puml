@@ -19,8 +19,10 @@ Ap0RbB_U2SH-s0jWNQdOyljVW6pAT7Gfs4zp_xMRgl9VKbNpNzkx0mA0GG08WTS_zM9CVMXm2MY0VY0_
 pSzlcv_VE9_yqtos-Vbjy_CRvvD_ciysFxzjVdxZVBRv-MtpynldiytFRvpFE9znFkDyREinpiUs7XoFhwgggggggWy
 }
 
-skinparam rectangle<<ContainerOptimizedOS>> {
+
+!definelong GCP_ContainerOptimizedOS(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ContainerOptimizedOS(alias) PUML_ENTITY(rectangle,#4285F4,ContainerOptimizedOS,alias,ContainerOptimizedOS)
+PUML_ENTITY(rectangle,#4285F4,ContainerOptimizedOS,alias,name)
+!enddefinelong

@@ -4,8 +4,10 @@ TTXTX-Ukm-uwF7STTjVXkUkmkmxFNOVTTNZkEkokmtFNuS-nwx2x3hlhiBiEkmlm0HTXTnrsrs5t7NRN
 m-gEONJdCBfp6DqvZEuS1fVQSclBhIstjjpQSclBhIstmFr1tvp5ZLjRRlrxrsLt7NOtfPHIIlS
 }
 
-skinparam rectangle<<modifiers_autoscaling>> {
+
+!definelong GCP_modifiers_autoscaling(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_autoscaling(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_autoscaling,alias,modifiers_autoscaling)
+PUML_ENTITY(rectangle,#4285F4,modifiers_autoscaling,alias,name)
+!enddefinelong

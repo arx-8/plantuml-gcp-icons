@@ -8,8 +8,10 @@ eiSI8IKw6Q9ta0M6d3-97a3G4dqa4KuY7J-9he98DqYkWMX9bqZkWMII7AvC4aacYIIGJ1993bScYGGF
 H1B9A2MII39AHeaaesIKIGcVab7uab3uab3uab12yKlubb14AazKyWaM4aLdPM2GAJep0mD8qUdjOlm4
 }
 
-skinparam rectangle<<Forseti_logo>> {
+
+!definelong GCP_Forseti_logo(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Forseti_logo(alias) PUML_ENTITY(rectangle,#4285F4,Forseti_logo,alias,Forseti_logo)
+PUML_ENTITY(rectangle,#4285F4,Forseti_logo,alias,name)
+!enddefinelong

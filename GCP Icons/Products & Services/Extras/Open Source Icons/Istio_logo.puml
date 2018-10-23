@@ -17,8 +17,10 @@ BgaD002W4uq2000000000000000000000000000000000000003WWG00000000000000000000000000
 000000000000000000000000004
 }
 
-skinparam rectangle<<Istio_logo>> {
+
+!definelong GCP_Istio_logo(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Istio_logo(alias) PUML_ENTITY(rectangle,#4285F4,Istio_logo,alias,Istio_logo)
+PUML_ENTITY(rectangle,#4285F4,Istio_logo,alias,name)
+!enddefinelong

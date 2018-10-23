@@ -10,8 +10,10 @@ PFLZRkl-nzal0Vwe_Q-55xyC-vp1l_yCg6--dGPn_ZslqwDD3UNLtsb9EZ-uD_FhD0hpOzKTVfxbJthy
 lpP_Vd4-ywVvjFdpQ_Fd5-SpVvfFcp-_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFct-_Dhy-SNvjFdpY_E9yudpYVFHrYFEHriFVezVQwsrrbfhhVK
 }
 
-skinparam rectangle<<TransferAppliance>> {
+
+!definelong GCP_TransferAppliance(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_TransferAppliance(alias) PUML_ENTITY(rectangle,#4285F4,TransferAppliance,alias,TransferAppliance)
+PUML_ENTITY(rectangle,#4285F4,TransferAppliance,alias,name)
+!enddefinelong

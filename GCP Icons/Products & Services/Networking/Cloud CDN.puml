@@ -11,8 +11,10 @@ my-Fd0_vrNnmy_FZ-F_Q_-V-lpyMTVz1_HSmxp-f_sRgvxxxZ-g_gl_ikQZxx-e_X7ljlwp_z8Knzz_M
 v5VpmStFZvkV7paVyglvuERdnytFZvmF-TLySFFpu-RdHyu7Dpy_Rdv-v7nmy_CZvuES3t8-oFc0Mm_8-S1Sly_byQMKKaeffPHI_WC
 }
 
-skinparam rectangle<<CloudCDN>> {
+
+!definelong GCP_CloudCDN(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudCDN(alias) PUML_ENTITY(rectangle,#4285F4,CloudCDN,alias,CloudCDN)
+PUML_ENTITY(rectangle,#4285F4,CloudCDN,alias,name)
+!enddefinelong

@@ -16,8 +16,10 @@ EI0060I084J_r8inzOy6z5_eiztlRxlVttYV_jDzjllzRVVx6-_JVxhFTh-_xNv_uttwJ_VPxlUttUzl
 -uptiRt7U1_RUt1yFacI94do0G
 }
 
-skinparam rectangle<<DeveloperPortal>> {
+
+!definelong GCP_DeveloperPortal(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_DeveloperPortal(alias) PUML_ENTITY(rectangle,#4285F4,DeveloperPortal,alias,DeveloperPortal)
+PUML_ENTITY(rectangle,#4285F4,DeveloperPortal,alias,name)
+!enddefinelong

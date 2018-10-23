@@ -13,8 +13,10 @@ jy4zt7xkyv_ZLRk_ltP_V_4--wVxjFlxQ_Vt5--pVxfFkx-_Tdz_yJxxf_kq-_jhz_SNxxD_ka-xlxzs
 sltznVlid-xJxk-ltTzVlC_-wJxj_lxQ_Vt5--oVxjFkxw_Ttr-yp_xfFkt-_jhz_SNxjFlxQ_Vt5-_JxkyltYVU9zudtaTxZtWVxJquV7vcPcPcPcRk
 }
 
-skinparam rectangle<<PremiumNetworkTier>> {
+
+!definelong GCP_PremiumNetworkTier(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_PremiumNetworkTier(alias) PUML_ENTITY(rectangle,#4285F4,PremiumNetworkTier,alias,PremiumNetworkTier)
+PUML_ENTITY(rectangle,#4285F4,PremiumNetworkTier,alias,name)
+!enddefinelong

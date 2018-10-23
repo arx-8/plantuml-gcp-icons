@@ -17,8 +17,10 @@ FVdLV73py-FcvqVEX_ngFhZv-N7pyoFdGtur7zpy_BZv-P7p8R-Q3sv-Vjpy_CZva5_D1pS_Fsv-VkHy
 7bzAAQMKKaefvGy
 }
 
-skinparam rectangle<<ApigeeSense>> {
+
+!definelong GCP_ApigeeSense(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ApigeeSense(alias) PUML_ENTITY(rectangle,#4285F4,ApigeeSense,alias,ApigeeSense)
+PUML_ENTITY(rectangle,#4285F4,ApigeeSense,alias,name)
+!enddefinelong

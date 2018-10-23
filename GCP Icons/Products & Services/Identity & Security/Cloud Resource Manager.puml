@@ -14,8 +14,10 @@ F05m_-b_yK-0DFzG1y3Ml-_pwySx0Daj_y2RVz3phxsMKlqv03qkFtrkVmu800O180ZHF_LYJBsd0VM_
 _RNx-ultsJ_TfztVNxk_ltYV_TDzsltzjVlxY_Tfz_VNxkyltgVTtr-yJxnFl4-yZ_OUyJxQUt1yVcPcPcPcPZu
 }
 
-skinparam rectangle<<CloudResourceManager>> {
+
+!definelong GCP_CloudResourceManager(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudResourceManager(alias) PUML_ENTITY(rectangle,#4285F4,CloudResourceManager,alias,CloudResourceManager)
+PUML_ENTITY(rectangle,#4285F4,CloudResourceManager,alias,name)
+!enddefinelong

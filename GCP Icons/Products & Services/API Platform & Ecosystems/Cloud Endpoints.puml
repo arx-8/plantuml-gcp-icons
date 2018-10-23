@@ -9,8 +9,10 @@ OVvgFdJpvwURFp_bV9Y_cW_T_FdfvizFEH_ch-P3Dtz-kldpKyw7-QlvqCsVdsx-_9JpePi_Fzty-Idd
 RlxyTFFdfvmFyrVpePi_Fzty-Iddm_pLVEZcpqytVtxA-T3Ddvzk_loKyw6RFp_bV2ZdGpaVolb0jnuevmC5-d22F7xRjctRjctRjctx3m
 }
 
-skinparam rectangle<<CloudEndpoints>> {
+
+!definelong GCP_CloudEndpoints(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudEndpoints(alias) PUML_ENTITY(rectangle,#4285F4,CloudEndpoints,alias,CloudEndpoints)
+PUML_ENTITY(rectangle,#4285F4,CloudEndpoints,alias,name)
+!enddefinelong

@@ -12,8 +12,10 @@ dt-e3w3cwmDKljQ_Ei07N_Qn4p_FVuuVtlpuOSu7uhVc0zxy-E7DZn_cV21-QpxWpOyVtlpuOSu7uhVc
 FxpvySES3tZpuuStFtwOym5lVlmmvmFcVC2S3xZnwypqTMxyEZjztVRuBCkoBCkoBCkox5y
 }
 
-skinparam rectangle<<ErrorReporting>> {
+
+!definelong GCP_ErrorReporting(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ErrorReporting(alias) PUML_ENTITY(rectangle,#4285F4,ErrorReporting,alias,ErrorReporting)
+PUML_ENTITY(rectangle,#4285F4,ErrorReporting,alias,name)
+!enddefinelong

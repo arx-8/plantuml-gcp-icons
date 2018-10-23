@@ -14,8 +14,10 @@ hhWqQ_PRNFxVjCsHVLm65eVY1_W36NZ6Fq1OxDghtC4_hH0Pg5HN-Em3Cj00PX-GWHEDUu4IEEEu3nW6
 jztlRxpFTh-_xNv_utss-_sDzndlCzvdl8_jFSRxsDw3u_D9aYH9aWy
 }
 
-skinparam rectangle<<CloudDatalab>> {
+
+!definelong GCP_CloudDatalab(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudDatalab(alias) PUML_ENTITY(rectangle,#4285F4,CloudDatalab,alias,CloudDatalab)
+PUML_ENTITY(rectangle,#4285F4,CloudDatalab,alias,name)
+!enddefinelong

@@ -14,8 +14,10 @@ k_-Gl_il-TVk7tK0Ax-ljStFRvkVtpYVRNv-s_pynldad-QppSzlcv_VE9_yqtos-Vbjy_CRvvD_ciys
 sURdjytFRvpFDZ-_SJxZVCRvZFEnhSSu7zjwyFRugggggggg-W
 }
 
-skinparam rectangle<<CloudTPU>> {
+
+!definelong GCP_CloudTPU(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudTPU(alias) PUML_ENTITY(rectangle,#4285F4,CloudTPU,alias,CloudTPU)
+PUML_ENTITY(rectangle,#4285F4,CloudTPU,alias,name)
+!enddefinelong

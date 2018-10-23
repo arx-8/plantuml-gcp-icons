@@ -18,8 +18,10 @@ lym3q2SUFUwxYnvp1pxeIOMapdkFTwdq19iKe0EQDcuzCwmdy7CB41LFfmOlvoS7dioWAt24jZGyaSOa
 xNv_s_t-nljiz_iRxpFUPxpFU1_RUuptiRq7ZyydIP8aINu
 }
 
-skinparam rectangle<<KeyManagementService>> {
+
+!definelong GCP_KeyManagementService(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_KeyManagementService(alias) PUML_ENTITY(rectangle,#4285F4,KeyManagementService,alias,KeyManagementService)
+PUML_ENTITY(rectangle,#4285F4,KeyManagementService,alias,name)
+!enddefinelong

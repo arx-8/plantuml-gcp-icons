@@ -12,8 +12,10 @@ Q_Vt5--pVxfFkx-_Tdz_yJxxf_kq-_jhz_SNxxD_ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_
 dv-PcPcPcPa7
 }
 
-skinparam rectangle<<Monitoring>> {
+
+!definelong GCP_Monitoring(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Monitoring(alias) PUML_ENTITY(rectangle,#4285F4,Monitoring,alias,Monitoring)
+PUML_ENTITY(rectangle,#4285F4,Monitoring,alias,name)
+!enddefinelong

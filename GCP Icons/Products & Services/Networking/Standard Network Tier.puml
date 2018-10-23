@@ -14,8 +14,10 @@ vjFcpw_Ddr-Sp_nfFct-_Dhy-SNvp9_cq-RFhysVNvpF_6a-RVxyslpvnVcq-VDhy-SNvpD_ca-RFxys
 jFdpQ_Fd5-SpVvfFcp-_Ddz-SJvj_lpQ_Fd5-RJvyulpYVE9yudpqTOZpaTR3twFNskjjTPQQwtr
 }
 
-skinparam rectangle<<StandardNetworkTier>> {
+
+!definelong GCP_StandardNetworkTier(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_StandardNetworkTier(alias) PUML_ENTITY(rectangle,#4285F4,StandardNetworkTier,alias,StandardNetworkTier)
+PUML_ENTITY(rectangle,#4285F4,StandardNetworkTier,alias,name)
+!enddefinelong

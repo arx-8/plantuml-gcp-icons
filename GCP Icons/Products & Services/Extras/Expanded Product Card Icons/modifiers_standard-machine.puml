@@ -3,8 +3,10 @@ xTfL0KKn342nEfX_jOyPBuzo_eOnq7XAaYIbXSl0dikWNYhMJIkLWJrNdSlbShbSxlyh_-_DT-_bSYEN
 BdT-9RfSBfVBvUQ1pTTj81Snjob9alO
 }
 
-skinparam rectangle<<modifiers_standardmachine>> {
+
+!definelong GCP_modifiers_standardmachine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_standardmachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_standardmachine,alias,modifiers_standardmachine)
+PUML_ENTITY(rectangle,#4285F4,modifiers_standardmachine,alias,name)
+!enddefinelong

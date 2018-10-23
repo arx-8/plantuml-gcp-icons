@@ -11,8 +11,10 @@ uUsJ5_xp1y2T-8Bfiq2fpFEB2QtIX0t_JfFVTmLU_jPnv0Luy_dnoviVlypvaZS_VddpuvSvNuhVcYzv
 Dpz-cVEb-AtvaZS_VddpuvSvNuhVcYzvy-ENDpz-cVCbRtxyykR7BtE-vCsFN-PyoPmlcVCbLtxBLDzovRTizQtRurDAAQMKKaef_Gu
 }
 
-skinparam rectangle<<CloudTexttoSpeech>> {
+
+!definelong GCP_CloudTexttoSpeech(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudTexttoSpeech(alias) PUML_ENTITY(rectangle,#4285F4,CloudTexttoSpeech,alias,CloudTexttoSpeech)
+PUML_ENTITY(rectangle,#4285F4,CloudTexttoSpeech,alias,name)
+!enddefinelong

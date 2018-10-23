@@ -13,8 +13,10 @@ Ps_-yRCv7uv_QpxipJz-zkOVFvlp8TRwjVqv800O180WHF_KYp7rZmRqVwFFTh-_xNv_uttwJ_VPxlUt
 _hRx_OttsUxtDzvdlCzud_4-jlSOxsDx3uxF9qcI94a-
 }
 
-skinparam rectangle<<Genomics>> {
+
+!definelong GCP_Genomics(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Genomics(alias) PUML_ENTITY(rectangle,#4285F4,Genomics,alias,Genomics)
+PUML_ENTITY(rectangle,#4285F4,Genomics,alias,name)
+!enddefinelong

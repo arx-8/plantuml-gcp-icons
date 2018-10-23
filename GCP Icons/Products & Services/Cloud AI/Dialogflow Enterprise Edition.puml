@@ -15,8 +15,10 @@ y5q1GF01t_b1y87V5G047_2T7mGV-5q1GF01tnNW0i6lv7-Vyqnwk_xQdvC21080Ya8SxP_O43hhVpJ0
 kz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkCzndlOtkFyJwsz-3s-IH9aYJ95m
 }
 
-skinparam rectangle<<DialogflowEnterpriseEdition>> {
+
+!definelong GCP_DialogflowEnterpriseEdition(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_DialogflowEnterpriseEdition(alias) PUML_ENTITY(rectangle,#4285F4,DialogflowEnterpriseEdition,alias,DialogflowEnterpriseEdition)
+PUML_ENTITY(rectangle,#4285F4,DialogflowEnterpriseEdition,alias,name)
+!enddefinelong

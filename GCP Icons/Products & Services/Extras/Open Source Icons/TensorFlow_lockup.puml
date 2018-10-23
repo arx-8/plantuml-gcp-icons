@@ -163,8 +163,10 @@ yUdwMZ5x7WJf0BDTQcTiadCXCNjURUdhPcEsPD0WsMoxaq6xPBiYPg_cFjYOZTcIGODiizrkov6eJpyn
 94bvrXuHlCPi5mb84CJaMPj4jdEDsVy1
 }
 
-skinparam rectangle<<TensorFlow_lockup>> {
+
+!definelong GCP_TensorFlow_lockup(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_TensorFlow_lockup(alias) PUML_ENTITY(rectangle,#4285F4,TensorFlow_lockup,alias,TensorFlow_lockup)
+PUML_ENTITY(rectangle,#4285F4,TensorFlow_lockup,alias,name)
+!enddefinelong

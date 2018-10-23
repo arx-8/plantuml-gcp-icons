@@ -8,8 +8,10 @@ NckQF_el6O3jPr-_RdTR_tkZkzy-Y3-J_3dI5B_-76kAF_gFDSEVM_clN__h_RV7w-RhJpTVVyhvYVvg
 Vxhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_wURhJpTVVyhvIJTVVyhvIJa_AUSdvVmatVeavVmaDVfrjyURcPcPcPdP3m
 }
 
-skinparam rectangle<<Logging>> {
+
+!definelong GCP_Logging(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Logging(alias) PUML_ENTITY(rectangle,#4285F4,Logging,alias,Logging)
+PUML_ENTITY(rectangle,#4285F4,Logging,alias,name)
+!enddefinelong

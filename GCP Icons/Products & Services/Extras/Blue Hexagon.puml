@@ -6,8 +6,10 @@ lB_rL_StTx__tFt-a_Ut_kh-vkxtdxlVV_B-rb_Ttzpz_dFt-q_Ut_gh-vkxtt_kVl_9-vkxtt_kVl_9
 pTtlFtU__-JzhR-wlxdx_UVkzv-yl_LNzpTtl__S_VwJzpTtl__S_VwJzpTtl__a_KtUt-JzJTxVvjvla_UtQVUdr-UJ94cI90S
 }
 
-skinparam rectangle<<BlueHexagon>> {
+
+!definelong GCP_BlueHexagon(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_BlueHexagon(alias) PUML_ENTITY(rectangle,#4285F4,BlueHexagon,alias,BlueHexagon)
+PUML_ENTITY(rectangle,#4285F4,BlueHexagon,alias,name)
+!enddefinelong

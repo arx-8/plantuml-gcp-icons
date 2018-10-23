@@ -4,8 +4,10 @@ fboxTcCLRWuNkzZgPd21IvLBnUDaFjsktTZGw0bSvci71i4kbwilAtQw_DVjM9YwWvV7zBxfbCPekkZg
 vJ9raJRfHeXY5yWRS0ESk75ejGkfoq8NvIwrRc2BN9IxLBkGkjpiHbZaGkho1YxlwxBKvLrTtiIbrcMvw_VTTktQzUz5As100kj-TosGSTASS-u9
 }
 
-skinparam rectangle<<modifiers_customvirtualmachine>> {
+
+!definelong GCP_modifiers_customvirtualmachine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_customvirtualmachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_customvirtualmachine,alias,modifiers_customvirtualmachine)
+PUML_ENTITY(rectangle,#4285F4,modifiers_customvirtualmachine,alias,name)
+!enddefinelong

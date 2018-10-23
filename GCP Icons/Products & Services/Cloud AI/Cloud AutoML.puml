@@ -13,8 +13,10 @@ Z7LV0GSoxekX5a2a-qvqu0BTLyw1VFFZ7NZbk2_6_sj_3We0X04e2j4_jHsywFO-3RY4jzhz_SNxjFlx
 ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_V_4-xVx-sltznVkq-_kBzudtYVU9zz7U8zv7Umz-dv-PcPcPcPa7
 }
 
-skinparam rectangle<<CloudAutoML>> {
+
+!definelong GCP_CloudAutoML(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudAutoML(alias) PUML_ENTITY(rectangle,#4285F4,CloudAutoML,alias,CloudAutoML)
+PUML_ENTITY(rectangle,#4285F4,CloudAutoML,alias,name)
+!enddefinelong

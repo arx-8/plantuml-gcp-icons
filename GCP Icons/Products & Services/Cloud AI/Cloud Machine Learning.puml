@@ -15,8 +15,10 @@ Ptm60lnk_Elym-lyItutS7typxlZztN-xNN-yyL_dV_-h_qvA00G1g0eHF_K9l2istyqeF-ByJxzf_ji
 d_xJVRRx_Mtt-nllqt-wptQ_l-r-V-DzjllzRVVx6--ptUzllCzud_4-utrixp7Un_OU_3wV94cI97a
 }
 
-skinparam rectangle<<CloudMachineLearning>> {
+
+!definelong GCP_CloudMachineLearning(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudMachineLearning(alias) PUML_ENTITY(rectangle,#4285F4,CloudMachineLearning,alias,CloudMachineLearning)
+PUML_ENTITY(rectangle,#4285F4,CloudMachineLearning,alias,name)
+!enddefinelong

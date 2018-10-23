@@ -12,8 +12,10 @@ SJwWpRSVsdpx8Su7x9Vc0zfy-w7Djn_YVC1-QJwWpRSVsdpx8Su7x9Vc0zfy-w7Djn_YVC1-QJwWpRSV
 y-s7E1yGvmFYV42D7nFJnzJuCJbzR7gySyuvvvnpphcl
 }
 
-skinparam rectangle<<APIMonetization>> {
+
+!definelong GCP_APIMonetization(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_APIMonetization(alias) PUML_ENTITY(rectangle,#4285F4,APIMonetization,alias,APIMonetization)
+PUML_ENTITY(rectangle,#4285F4,APIMonetization,alias,name)
+!enddefinelong

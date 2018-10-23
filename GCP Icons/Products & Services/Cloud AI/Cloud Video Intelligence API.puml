@@ -13,8 +13,10 @@ zFwJskLlO_U-_qOmlSBzbdN_aSro0HRWzX_q_LVV-y_Y3Bh_hkpevudlFsm1-ltD-o__jNC71G320133
 d4-SJvnFd8-s7d4-sdhmU_nQQwsrrbfhhGS
 }
 
-skinparam rectangle<<CloudVideoIntelligenceAPI>> {
+
+!definelong GCP_CloudVideoIntelligenceAPI(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudVideoIntelligenceAPI(alias) PUML_ENTITY(rectangle,#4285F4,CloudVideoIntelligenceAPI,alias,CloudVideoIntelligenceAPI)
+PUML_ENTITY(rectangle,#4285F4,CloudVideoIntelligenceAPI,alias,name)
+!enddefinelong

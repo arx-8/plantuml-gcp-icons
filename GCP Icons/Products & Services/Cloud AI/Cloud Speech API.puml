@@ -8,8 +8,10 @@ ypStF__S_FoJyxVyQlxcvkUVcvz_SlwMNytVtFpyS_FpJyxVyglvcvkVVsv-_idvMturVtFpyy_Dppyv
 K7_syVYggggggghw2G
 }
 
-skinparam rectangle<<CloudSpeechAPI>> {
+
+!definelong GCP_CloudSpeechAPI(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudSpeechAPI(alias) PUML_ENTITY(rectangle,#4285F4,CloudSpeechAPI,alias,CloudSpeechAPI)
+PUML_ENTITY(rectangle,#4285F4,CloudSpeechAPI,alias,name)
+!enddefinelong

@@ -8,8 +8,10 @@ V-bt_vz-zr_gT__ja_m0rnWBNLDFptV_Txhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_qL_D
 JpTVVyhvIJTVVxhv-bFEJxhv-bFEJyhvIJa_QU7FbUZdMlXpDVgvLuytCpCpCpEpJm
 }
 
-skinparam rectangle<<CloudNaturalLanguageAPI>> {
+
+!definelong GCP_CloudNaturalLanguageAPI(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudNaturalLanguageAPI(alias) PUML_ENTITY(rectangle,#4285F4,CloudNaturalLanguageAPI,alias,CloudNaturalLanguageAPI)
+PUML_ENTITY(rectangle,#4285F4,CloudNaturalLanguageAPI,alias,name)
+!enddefinelong

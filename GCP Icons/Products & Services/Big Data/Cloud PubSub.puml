@@ -15,8 +15,10 @@ bZ3r2ArKR_m9hJ-cL0DaW9jVptVz4xtoAUhvks-5Xp-kQFihF0DGEPz-YkTVr7-X_3m3G69pBXUqGVlh
 sJ_TfztVNxk_ltYV_TDzsltzjVlxY_VPFzsdtTzVkx-_U9_zqttQ_Vsr-_kBzsdtzzVkxo_UfztVNxnFl4-yJxoFzXxnFjfxSFlypCpCpCpCV
 }
 
-skinparam rectangle<<CloudPubSub>> {
+
+!definelong GCP_CloudPubSub(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudPubSub(alias) PUML_ENTITY(rectangle,#4285F4,CloudPubSub,alias,CloudPubSub)
+PUML_ENTITY(rectangle,#4285F4,CloudPubSub,alias,name)
+!enddefinelong

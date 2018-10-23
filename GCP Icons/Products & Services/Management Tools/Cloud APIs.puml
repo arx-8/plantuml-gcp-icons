@@ -12,8 +12,10 @@ UNzUXG_uqG0mdm_moj7-F9ulpURRhzby-pMSBza_cY_DvjklsNpxDPmlsJ-QBytcsw_PVFird2_PFvel
 -pMSBytcsw_XV6auNnhEbuxX3ouWTZWV7wxdTppUyppFyppFyppF-m4
 }
 
-skinparam rectangle<<CloudAPIs>> {
+
+!definelong GCP_CloudAPIs(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudAPIs(alias) PUML_ENTITY(rectangle,#4285F4,CloudAPIs,alias,CloudAPIs)
+PUML_ENTITY(rectangle,#4285F4,CloudAPIs,alias,name)
+!enddefinelong

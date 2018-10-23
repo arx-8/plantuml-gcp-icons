@@ -8,8 +8,10 @@ VlzB-U_3B-Vddvo_vLVpDpS__zpy_9Fpj_ng_kRcvv-Rdtzo_fPVpT_S_Fnpy_DFpj_S_Fnpy_DFpj_o
 _hdv-IVdR_dL_CtDppytF__a_2s_ch-v-VddvkUVdB-v-VddvkUVdB-v-Vadvszo_YRdRtB-DhT-cvo_JQS_zl3ugggggggg-XK
 }
 
-skinparam rectangle<<CloudLoadBalancing>> {
+
+!definelong GCP_CloudLoadBalancing(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudLoadBalancing(alias) PUML_ENTITY(rectangle,#4285F4,CloudLoadBalancing,alias,CloudLoadBalancing)
+PUML_ENTITY(rectangle,#4285F4,CloudLoadBalancing,alias,name)
+!enddefinelong

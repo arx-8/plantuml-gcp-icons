@@ -20,8 +20,10 @@ fZlpoxpynfjZttyz19Qzt6bm5nZxcFxXDkNz4GI4zB_RduC20640YaBqJ-tH2BgzJmFOFzsdtTzVkx-_
 _RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGVb_ElNyvcPcPcPcGS
 }
 
-skinparam rectangle<<DataLossPreventionAPI>> {
+
+!definelong GCP_DataLossPreventionAPI(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_DataLossPreventionAPI(alias) PUML_ENTITY(rectangle,#4285F4,DataLossPreventionAPI,alias,DataLossPreventionAPI)
+PUML_ENTITY(rectangle,#4285F4,DataLossPreventionAPI,alias,name)
+!enddefinelong

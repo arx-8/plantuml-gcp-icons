@@ -15,8 +15,10 @@ FzIALvZwe6HRJXzHYKxK3oou0fpn3-8hwYDgSU7j8k1Ho-_sxg00G1W0ObZygyO37zYkTH05xV_vjlpJ
 RvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxR_Fos-Vbjy_CRvxFDps-Rdzyudsr-VkDynlcCynddOrkFSJwszU3t-Agggggggde
 }
 
-skinparam rectangle<<CloudIoTCore>> {
+
+!definelong GCP_CloudIoTCore(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudIoTCore(alias) PUML_ENTITY(rectangle,#4285F4,CloudIoTCore,alias,CloudIoTCore)
+PUML_ENTITY(rectangle,#4285F4,CloudIoTCore,alias,name)
+!enddefinelong

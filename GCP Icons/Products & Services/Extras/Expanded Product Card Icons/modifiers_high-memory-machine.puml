@@ -3,8 +3,10 @@ xTIrOGH100H1PL3vPojNhET-c7Rk5ilRjtjfhRNMMciHiKGi0Pl09309J0AJm2Gm2Km2ay0aC0bC0fF0
 2Km0ttbhhUNNBh7Z19O3R_LN9x1Sm7K2oo6kVph5zR_h_jsvd_z_N_ZUxyTESET-At3dpfrxx-_6tEy5xjovS--zjTPQQwsrrZi
 }
 
-skinparam rectangle<<modifiers_highmemorymachine>> {
+
+!definelong GCP_modifiers_highmemorymachine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_highmemorymachine(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_highmemorymachine,alias,modifiers_highmemorymachine)
+PUML_ENTITY(rectangle,#4285F4,modifiers_highmemorymachine,alias,name)
+!enddefinelong

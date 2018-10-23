@@ -1,7 +1,9 @@
 sprite $modifiers_storage_storage [120x120/16z] xTT10G0G4031Qw1_Mpy10DnCWNrlB080GDaWSrStcYkxkhgwkgDqTGS1-45TFwYhgwlh1tNz880VrFM3khgwkdvGrmy20501
 
-skinparam rectangle<<modifiers_storage>> {
+
+!definelong GCP_modifiers_storage(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_storage(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_storage,alias,modifiers_storage)
+PUML_ENTITY(rectangle,#4285F4,modifiers_storage,alias,name)
+!enddefinelong

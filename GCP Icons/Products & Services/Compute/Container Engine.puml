@@ -16,8 +16,10 @@ Vbu6ialZkVxj_d1nbF9S_tfbF-xDV_ouEHzu_1VbNty0yBNzEI50802084J_r8Rm_XqQqFy8s_t-nllq
 Vd_ZVVfFzzdkzxVTxs-yptQ_l-r-V-DzjllzZVSPxpFUPxoFxJt6-zZUWyVdaoH9aYG_
 }
 
-skinparam rectangle<<ContainerEngine>> {
+
+!definelong GCP_ContainerEngine(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_ContainerEngine(alias) PUML_ENTITY(rectangle,#4285F4,ContainerEngine,alias,ContainerEngine)
+PUML_ENTITY(rectangle,#4285F4,ContainerEngine,alias,name)
+!enddefinelong

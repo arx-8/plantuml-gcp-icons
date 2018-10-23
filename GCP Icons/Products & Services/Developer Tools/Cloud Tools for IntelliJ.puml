@@ -14,8 +14,10 @@ _g_uRFFps-RdDyvdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv
 dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
-skinparam rectangle<<CloudToolsforIntelliJ>> {
+
+!definelong GCP_CloudToolsforIntelliJ(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudToolsforIntelliJ(alias) PUML_ENTITY(rectangle,#4285F4,CloudToolsforIntelliJ,alias,CloudToolsforIntelliJ)
+PUML_ENTITY(rectangle,#4285F4,CloudToolsforIntelliJ,alias,name)
+!enddefinelong

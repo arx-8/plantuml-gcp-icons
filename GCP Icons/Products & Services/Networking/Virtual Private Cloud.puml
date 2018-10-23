@@ -8,8 +8,10 @@ Vt1kVlx9-Lj-DNzpy_FFpSy_ENzpy_FFpSy_EN_Bh-PlRdx-kVdv9-Tl-TNypStFFpS__-JyBR-Qlxdv
 SlxcvkUVcvz_SlxcvkUVdB_9-PkSlrduvoJwSnR-EOt-tEFnLLLLLLLLzHC
 }
 
-skinparam rectangle<<VirtualPrivateCloud>> {
+
+!definelong GCP_VirtualPrivateCloud(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_VirtualPrivateCloud(alias) PUML_ENTITY(rectangle,#4285F4,VirtualPrivateCloud,alias,VirtualPrivateCloud)
+PUML_ENTITY(rectangle,#4285F4,VirtualPrivateCloud,alias,name)
+!enddefinelong

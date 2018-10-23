@@ -9,8 +9,10 @@ z1VptV_Jdsw-_bJptN_Mdsw-_fJp4_tL_AIRhp_TVFqfvoVwg_b9Drz_kldwKyvFz5Vpasw-_dJpzQUS
 dsw-_fJpasw-_fJpat9-KivFolb9klL9olb9QlMlJOytCpCpCpEptm4
 }
 
-skinparam rectangle<<CloudExternalIPAddresses>> {
+
+!definelong GCP_CloudExternalIPAddresses(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudExternalIPAddresses(alias) PUML_ENTITY(rectangle,#4285F4,CloudExternalIPAddresses,alias,CloudExternalIPAddresses)
+PUML_ENTITY(rectangle,#4285F4,CloudExternalIPAddresses,alias,name)
+!enddefinelong

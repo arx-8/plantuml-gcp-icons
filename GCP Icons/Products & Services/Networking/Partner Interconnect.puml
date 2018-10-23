@@ -8,8 +8,10 @@ yhV_C__tkVO_xzv-dlV-zyv_R1P__ix_vU_yR_xElzlcF-Hl_al-vZ_bR_wPRVvV_kP_vc_-R_xcNz_A
 t-JyRMxzDZb_crR_hIUFhwgggggggdS
 }
 
-skinparam rectangle<<PartnerInterconnect>> {
+
+!definelong GCP_PartnerInterconnect(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_PartnerInterconnect(alias) PUML_ENTITY(rectangle,#4285F4,PartnerInterconnect,alias,PartnerInterconnect)
+PUML_ENTITY(rectangle,#4285F4,PartnerInterconnect,alias,name)
+!enddefinelong

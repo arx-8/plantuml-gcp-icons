@@ -11,8 +11,10 @@ V4T_Elknt7zPyu7LVkxj3tC-iDJVX7n7V_hxmNKDV_xv_rDipWVsvXy_zkOVFpRd0yU_DVzF-tD00308
 f_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDxZ_4-jlVW-7oI94cIv0C
 }
 
-skinparam rectangle<<Debugger>> {
+
+!definelong GCP_Debugger(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Debugger(alias) PUML_ENTITY(rectangle,#4285F4,Debugger,alias,Debugger)
+PUML_ENTITY(rectangle,#4285F4,Debugger,alias,name)
+!enddefinelong

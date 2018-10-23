@@ -12,8 +12,10 @@ xe00G1W0Gk3rJsqBTNjeS0beW9N_OpxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv-Mtpynldat-QppO_lsr-
 cv_VDZ-_SJxR_Fos-VcDyzdcvpVEPvpFE9znFhRr6ETZMmz-Zw-ggggggge7
 }
 
-skinparam rectangle<<Stackdriver>> {
+
+!definelong GCP_Stackdriver(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_Stackdriver(alias) PUML_ENTITY(rectangle,#4285F4,Stackdriver,alias,Stackdriver)
+PUML_ENTITY(rectangle,#4285F4,Stackdriver,alias,name)
+!enddefinelong

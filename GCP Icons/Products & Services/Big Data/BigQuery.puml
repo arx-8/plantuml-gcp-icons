@@ -14,8 +14,10 @@ xSy10S0W00GX-gTUZAb_D62xtzzslx_nFlsd-spt-zlkzpVUf_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV
 xsDxZ_4-jlVW-7oI94cIv0C
 }
 
-skinparam rectangle<<BigQuery>> {
+
+!definelong GCP_BigQuery(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_BigQuery(alias) PUML_ENTITY(rectangle,#4285F4,BigQuery,alias,BigQuery)
+PUML_ENTITY(rectangle,#4285F4,BigQuery,alias,name)
+!enddefinelong

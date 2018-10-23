@@ -11,8 +11,10 @@ sD8ukDV_VZB__Y_s_pA_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFlEd-RJvyslpvnVdq-RFhysV
 _lpQ_Fd5-SoVvjFcpw_Ddr-Sp_nfFct-_Dhy-SNvjFdpQ_Fd5-VJviylpYVE9yudpaTRZpWVRJtuFNwjjTPQQwsrrWC
 }
 
-skinparam rectangle<<CloudToolsforVisualStudio>> {
+
+!definelong GCP_CloudToolsforVisualStudio(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudToolsforVisualStudio(alias) PUML_ENTITY(rectangle,#4285F4,CloudToolsforVisualStudio,alias,CloudToolsforVisualStudio)
+PUML_ENTITY(rectangle,#4285F4,CloudToolsforVisualStudio,alias,name)
+!enddefinelong

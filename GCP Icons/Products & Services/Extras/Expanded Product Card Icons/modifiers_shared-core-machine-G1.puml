@@ -3,8 +3,10 @@ xTf50GCm44N1TV3zksqlPSRGl6De16Jh94cIb2_tDDi2pa_grasQmFbP0xjSBfVBvTQL7kn-xDQs1cur
 kcmYbvjMRbPparPk6hZxFd7zBt2vN2wNsmOsN_S7kOkvJKcIj04
 }
 
-skinparam rectangle<<modifiers_sharedcoremachineG1>> {
+
+!definelong GCP_modifiers_sharedcoremachineG1(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_modifiers_sharedcoremachineG1(alias) PUML_ENTITY(rectangle,#4285F4,modifiers_sharedcoremachineG1,alias,modifiers_sharedcoremachineG1)
+PUML_ENTITY(rectangle,#4285F4,modifiers_sharedcoremachineG1,alias,name)
+!enddefinelong

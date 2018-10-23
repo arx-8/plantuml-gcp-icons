@@ -11,8 +11,10 @@ mVKg1VupXNlcpOyVtlpuOSu7uhVc0zxy-E7DZn_cV21-QpxWpOyVtlpuOSu7lFdnmviVFxpvySES3tZp
 tzFZKqeffPHIIYbz1G
 }
 
-skinparam rectangle<<CloudVPN>> {
+
+!definelong GCP_CloudVPN(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_CloudVPN(alias) PUML_ENTITY(rectangle,#4285F4,CloudVPN,alias,CloudVPN)
+PUML_ENTITY(rectangle,#4285F4,CloudVPN,alias,name)
+!enddefinelong

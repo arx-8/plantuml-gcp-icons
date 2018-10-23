@@ -8,8 +8,10 @@ _CtDppytF__a_2s_ch-v-VddvkUVdB_bL_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_E
 RtB-Pk6Va-ZFMVZdDFfpTu-lggggggggdm
 }
 
-skinparam rectangle<<DedicatedInterconnect>> {
+
+!definelong GCP_DedicatedInterconnect(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_DedicatedInterconnect(alias) PUML_ENTITY(rectangle,#4285F4,DedicatedInterconnect,alias,DedicatedInterconnect)
+PUML_ENTITY(rectangle,#4285F4,DedicatedInterconnect,alias,name)
+!enddefinelong

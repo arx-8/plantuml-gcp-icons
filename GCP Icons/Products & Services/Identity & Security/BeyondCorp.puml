@@ -18,8 +18,10 @@ V_SNe7ittNudw0mUGVnvtFihZfdp_XAtHfxdr_z7w__P_XmG00m2G12YV-h5cFf70zZkzxVTxs-yJ__f
 Dzwd_tIVxNv_s_t-nljiz_lRxlSttcUxtzzud_4-utt6-zZUOxoFxJquFfyaIP8a-G
 }
 
-skinparam rectangle<<BeyondCorp>> {
+
+!definelong GCP_BeyondCorp(alias,name)
+skinparam rectangle<<name>> {
   BackgroundColor White
 }
-
-!define GCP_BeyondCorp(alias) PUML_ENTITY(rectangle,#4285F4,BeyondCorp,alias,BeyondCorp)
+PUML_ENTITY(rectangle,#4285F4,BeyondCorp,alias,name)
+!enddefinelong
