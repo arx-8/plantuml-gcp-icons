@@ -14,9 +14,11 @@ d4-SJvnFd8-s7d4-sdhmU_nQQwsrrbfhhGS
 }
 
 
-!definelong GCP_CloudVideoIntelligenceAPI(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudVideoIntelligenceAPI(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudVideoIntelligenceAPI,alias,name)
+PUML_ENTITY(container,#4285F4,CloudVideoIntelligenceAPI,alias,name)
 !enddefinelong

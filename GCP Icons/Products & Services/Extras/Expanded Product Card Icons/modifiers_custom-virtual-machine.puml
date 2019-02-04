@@ -5,9 +5,11 @@ vJ9raJRfHeXY5yWRS0ESk75ejGkfoq8NvIwrRc2BN9IxLBkGkjpiHbZaGkho1YxlwxBKvLrTtiIbrcMv
 }
 
 
-!definelong GCP_modifiers_customvirtualmachine(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_modifiers_customvirtualmachine(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,modifiers_customvirtualmachine,alias,name)
+PUML_ENTITY(container,#4285F4,modifiers_customvirtualmachine,alias,name)
 !enddefinelong

@@ -9,9 +9,11 @@ H1B9A2MII39AHeaaesIKIGcVab7uab3uab3uab12yKlubb14AazKyWaM4aLdPM2GAJep0mD8qUdjOlm4
 }
 
 
-!definelong GCP_Forseti_logo(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Forseti_logo(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Forseti_logo,alias,name)
+PUML_ENTITY(container,#4285F4,Forseti_logo,alias,name)
 !enddefinelong

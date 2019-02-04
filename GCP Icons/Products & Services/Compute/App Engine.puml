@@ -18,9 +18,11 @@ jTPQQwsrrdu1
 }
 
 
-!definelong GCP_AppEngine(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_AppEngine(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,AppEngine,alias,name)
+PUML_ENTITY(container,#4285F4,AppEngine,alias,name)
 !enddefinelong

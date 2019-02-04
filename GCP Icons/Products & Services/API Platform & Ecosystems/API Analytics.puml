@@ -14,9 +14,11 @@ T9zsVt_j_lxYVVPFzsdtzzVkxo_UP_zqdtP_V-t-_k9zza_tQVVtr-xlBzwdtTzVkx-_U9zsVt_nFl4-
 }
 
 
-!definelong GCP_APIAnalytics(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_APIAnalytics(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,APIAnalytics,alias,name)
+PUML_ENTITY(container,#4285F4,APIAnalytics,alias,name)
 !enddefinelong

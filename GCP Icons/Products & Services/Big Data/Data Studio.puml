@@ -12,9 +12,11 @@ nozplXI_DL_oviSlRtxyCkTBtlpuvSsFN-PyoPiVlypvaZbVCkTBvdn9tdf9vdn9Tlfpo-DJIYcbb59A
 }
 
 
-!definelong GCP_DataStudio(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_DataStudio(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,DataStudio,alias,name)
+PUML_ENTITY(container,#4285F4,DataStudio,alias,name)
 !enddefinelong

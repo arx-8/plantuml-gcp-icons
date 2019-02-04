@@ -16,9 +16,11 @@ sJ_TfztVNxk_ltYV_TDzsltzjVlxY_VPFzsdtTzVkx-_U9_zqttQ_Vsr-_kBzsdtzzVkxo_UfztVNxnF
 }
 
 
-!definelong GCP_CloudPubSub(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudPubSub(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudPubSub,alias,name)
+PUML_ENTITY(container,#4285F4,CloudPubSub,alias,name)
 !enddefinelong

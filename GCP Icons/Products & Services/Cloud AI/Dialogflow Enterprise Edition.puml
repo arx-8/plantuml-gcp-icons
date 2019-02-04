@@ -16,9 +16,11 @@ kz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkCzndlOtkFyJwsz-3s-IH9aYJ95m
 }
 
 
-!definelong GCP_DialogflowEnterpriseEdition(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_DialogflowEnterpriseEdition(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,DialogflowEnterpriseEdition,alias,name)
+PUML_ENTITY(container,#4285F4,DialogflowEnterpriseEdition,alias,name)
 !enddefinelong

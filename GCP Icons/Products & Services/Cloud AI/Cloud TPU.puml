@@ -15,9 +15,11 @@ sURdjytFRvpFDZ-_SJxZVCRvZFEnhSSu7zjwyFRugggggggg-W
 }
 
 
-!definelong GCP_CloudTPU(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudTPU(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudTPU,alias,name)
+PUML_ENTITY(container,#4285F4,CloudTPU,alias,name)
 !enddefinelong

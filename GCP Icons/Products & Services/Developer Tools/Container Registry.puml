@@ -14,9 +14,11 @@ Y_EPFysdpPzVcp-_E9_vqtpQ_Fcr-VEByva_pQVDdr-RFxyudpP_Vct-_E9yslpvnVd4-SJvnFbewn7d
 }
 
 
-!definelong GCP_ContainerRegistry(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ContainerRegistry(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ContainerRegistry,alias,name)
+PUML_ENTITY(container,#4285F4,ContainerRegistry,alias,name)
 !enddefinelong

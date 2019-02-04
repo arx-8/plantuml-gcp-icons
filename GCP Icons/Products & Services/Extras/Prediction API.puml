@@ -15,9 +15,11 @@ vnFdewr7d8-s7jmUlzPQQwsrrbhh0m
 }
 
 
-!definelong GCP_PredictionAPI(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_PredictionAPI(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,PredictionAPI,alias,name)
+PUML_ENTITY(container,#4285F4,PredictionAPI,alias,name)
 !enddefinelong

@@ -14,9 +14,11 @@ _hRx_OttsUxtDzvdlCzud_4-jlSOxsDx3uxF9qcI94a-
 }
 
 
-!definelong GCP_Genomics(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Genomics(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Genomics,alias,name)
+PUML_ENTITY(container,#4285F4,Genomics,alias,name)
 !enddefinelong

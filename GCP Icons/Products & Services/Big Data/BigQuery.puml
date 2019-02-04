@@ -15,9 +15,11 @@ xsDxZ_4-jlVW-7oI94cIv0C
 }
 
 
-!definelong GCP_BigQuery(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_BigQuery(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,BigQuery,alias,name)
+PUML_ENTITY(container,#4285F4,BigQuery,alias,name)
 !enddefinelong

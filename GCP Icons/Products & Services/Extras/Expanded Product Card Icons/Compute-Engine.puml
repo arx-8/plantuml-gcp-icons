@@ -4,9 +4,11 @@ G2Vp5_hG-Vi8
 }
 
 
-!definelong GCP_ComputeEngine(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ComputeEngine(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ComputeEngine,alias,name)
+PUML_ENTITY(container,#4285F4,ComputeEngine,alias,name)
 !enddefinelong

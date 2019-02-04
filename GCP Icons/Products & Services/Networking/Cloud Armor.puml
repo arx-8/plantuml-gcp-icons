@@ -19,9 +19,11 @@ sURdDyvddCyudt4-jlKOvsDR3ux7LrLLLLLLrGS
 }
 
 
-!definelong GCP_CloudArmor(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudArmor(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudArmor,alias,name)
+PUML_ENTITY(container,#4285F4,CloudArmor,alias,name)
 !enddefinelong

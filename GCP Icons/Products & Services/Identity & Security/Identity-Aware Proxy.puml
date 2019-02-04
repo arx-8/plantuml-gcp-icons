@@ -16,9 +16,11 @@ U9_zqttQ_Vsr-_kBzza_tQVTtr-xlxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5
 }
 
 
-!definelong GCP_IdentityAwareProxy(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_IdentityAwareProxy(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,IdentityAwareProxy,alias,name)
+PUML_ENTITY(container,#4285F4,IdentityAwareProxy,alias,name)
 !enddefinelong

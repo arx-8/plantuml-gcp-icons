@@ -20,9 +20,11 @@ pSzlcv_VE9_yqtos-Vbjy_CRvvD_ciysFxzjVdxZVBRv-MtpynldiytFRvpFE9znFkDyREinpiUs7XoF
 }
 
 
-!definelong GCP_ContainerOptimizedOS(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ContainerOptimizedOS(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ContainerOptimizedOS,alias,name)
+PUML_ENTITY(container,#4285F4,ContainerOptimizedOS,alias,name)
 !enddefinelong

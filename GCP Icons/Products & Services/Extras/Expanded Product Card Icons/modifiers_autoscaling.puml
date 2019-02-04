@@ -5,9 +5,11 @@ m-gEONJdCBfp6DqvZEuS1fVQSclBhIstjjpQSclBhIstmFr1tvp5ZLjRRlrxrsLt7NOtfPHIIlS
 }
 
 
-!definelong GCP_modifiers_autoscaling(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_modifiers_autoscaling(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,modifiers_autoscaling,alias,name)
+PUML_ENTITY(container,#4285F4,modifiers_autoscaling,alias,name)
 !enddefinelong

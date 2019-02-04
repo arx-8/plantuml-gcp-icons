@@ -16,9 +16,11 @@ d_xJVRRx_Mtt-nllqt-wptQ_l-r-V-DzjllzRVVx6--ptUzllCzud_4-utrixp7Un_OU_3wV94cI97a
 }
 
 
-!definelong GCP_CloudMachineLearning(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudMachineLearning(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudMachineLearning,alias,name)
+PUML_ENTITY(container,#4285F4,CloudMachineLearning,alias,name)
 !enddefinelong

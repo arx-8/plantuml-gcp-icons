@@ -5,9 +5,11 @@ ZRduEsUjUW8
 }
 
 
-!definelong GCP_CloudDataproc(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudDataproc(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudDataproc,alias,name)
+PUML_ENTITY(container,#4285F4,CloudDataproc,alias,name)
 !enddefinelong

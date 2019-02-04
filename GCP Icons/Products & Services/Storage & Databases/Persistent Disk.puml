@@ -9,9 +9,11 @@ _4tEt-JypSO_a-dFRFmpdVxiyVYggggggghw2W
 }
 
 
-!definelong GCP_PersistentDisk(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_PersistentDisk(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,PersistentDisk,alias,name)
+PUML_ENTITY(container,#4285F4,PersistentDisk,alias,name)
 !enddefinelong

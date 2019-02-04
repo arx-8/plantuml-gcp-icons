@@ -19,9 +19,11 @@ xNv_s_t-nljiz_iRxpFUPxpFU1_RUuptiRq7ZyydIP8aINu
 }
 
 
-!definelong GCP_KeyManagementService(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_KeyManagementService(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,KeyManagementService,alias,name)
+PUML_ENTITY(container,#4285F4,KeyManagementService,alias,name)
 !enddefinelong

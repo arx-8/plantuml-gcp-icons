@@ -4,9 +4,11 @@ kcmYbvjMRbPparPk6hZxFd7zBt2vN2wNsmOsN_S7kOkvJKcIj04
 }
 
 
-!definelong GCP_modifiers_sharedcoremachineG1(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_modifiers_sharedcoremachineG1(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,modifiers_sharedcoremachineG1,alias,name)
+PUML_ENTITY(container,#4285F4,modifiers_sharedcoremachineG1,alias,name)
 !enddefinelong

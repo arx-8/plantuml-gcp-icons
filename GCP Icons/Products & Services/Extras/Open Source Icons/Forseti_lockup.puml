@@ -13,9 +13,11 @@ jj3xPanX6cbH_pP3OyboGzU68ZseojQedVEI6OMfsoBUAQRRyiOz0m
 }
 
 
-!definelong GCP_Forseti_lockup(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Forseti_lockup(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Forseti_lockup,alias,name)
+PUML_ENTITY(container,#4285F4,Forseti_lockup,alias,name)
 !enddefinelong

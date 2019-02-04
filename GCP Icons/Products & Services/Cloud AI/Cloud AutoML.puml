@@ -14,9 +14,11 @@ ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_V_4-xVx-sltznVkq-_kBzudtYVU9zz7U8zv7Umz-
 }
 
 
-!definelong GCP_CloudAutoML(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudAutoML(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudAutoML,alias,name)
+PUML_ENTITY(container,#4285F4,CloudAutoML,alias,name)
 !enddefinelong

@@ -32,9 +32,11 @@ jK7VkqzhadPTpvSrC4Pr2MvzO-3uwL0d-psr1mS2000008ByhGUvsW40000000000000000000000000
 }
 
 
-!definelong GCP_GoogleCloudPlatform(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_GoogleCloudPlatform(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,GoogleCloudPlatform,alias,name)
+PUML_ENTITY(container,#4285F4,GoogleCloudPlatform,alias,name)
 !enddefinelong

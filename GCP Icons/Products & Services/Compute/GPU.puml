@@ -12,9 +12,11 @@ npWVsthmv_5LLLLLLLNr3m
 }
 
 
-!definelong GCP_GPU(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_GPU(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,GPU,alias,name)
+PUML_ENTITY(container,#4285F4,GPU,alias,name)
 !enddefinelong

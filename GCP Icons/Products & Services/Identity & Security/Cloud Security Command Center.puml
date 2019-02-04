@@ -16,9 +16,11 @@ ZVVfFzrdkz_VTh-_yJxzf_jiz_lRxlSttcUxtzzslx_nFjlz_iRxZFSPxpFUn_OUutrixy7ZyqcI94cI
 }
 
 
-!definelong GCP_CloudSecurityCommandCenter(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudSecurityCommandCenter(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudSecurityCommandCenter,alias,name)
+PUML_ENTITY(container,#4285F4,CloudSecurityCommandCenter,alias,name)
 !enddefinelong

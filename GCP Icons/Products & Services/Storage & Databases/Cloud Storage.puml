@@ -9,9 +9,11 @@ vzFcpw_Ddr-SJvi_lpYVE9yudpWVRJtYVBJruFVujTPQQwsrrbeF
 }
 
 
-!definelong GCP_CloudStorage(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudStorage(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudStorage,alias,name)
+PUML_ENTITY(container,#4285F4,CloudStorage,alias,name)
 !enddefinelong

@@ -13,9 +13,11 @@ cv_VDZ-_SJxR_Fos-VcDyzdcvpVEPvpFE9znFhRr6ETZMmz-Zw-ggggggge7
 }
 
 
-!definelong GCP_Stackdriver(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Stackdriver(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Stackdriver,alias,name)
+PUML_ENTITY(container,#4285F4,Stackdriver,alias,name)
 !enddefinelong

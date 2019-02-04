@@ -9,6 +9,8 @@ TEMPLATE=$(cat <<EOF
 !definelong GCP___SPRITE__(alias,name,container='rectangle')
 skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
 PUML_ENTITY(container,$google_blue,__SPRITE__,alias,name)
 !enddefinelong

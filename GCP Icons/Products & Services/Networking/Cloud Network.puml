@@ -12,9 +12,11 @@ yva_pQVDdr-RFxyud_dJVDhy-RNvyulpcJ_DfysVNvi_lpYVDdz-RVxyudpQ_Fd5-SJvnFd4-MZh4UUZ
 }
 
 
-!definelong GCP_CloudNetwork(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudNetwork(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudNetwork,alias,name)
+PUML_ENTITY(container,#4285F4,CloudNetwork,alias,name)
 !enddefinelong

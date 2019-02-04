@@ -5,9 +5,11 @@ T1bmqUmln8qRDsxEZSJz9-VDsCs5APTQDwMKKahF
 }
 
 
-!definelong GCP_modifiers_preemptablevm(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_modifiers_preemptablevm(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,modifiers_preemptablevm,alias,name)
+PUML_ENTITY(container,#4285F4,modifiers_preemptablevm,alias,name)
 !enddefinelong

@@ -21,9 +21,11 @@ Vt_j_lxYVVPFzsdtzzVkxo_UfztVNxk_ltYVTdz_yJxnFl4-yJxQUyJxQE_1yVcPcPcPcPdv
 }
 
 
-!definelong GCP_CloudDNS(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudDNS(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudDNS,alias,name)
+PUML_ENTITY(container,#4285F4,CloudDNS,alias,name)
 !enddefinelong

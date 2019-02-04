@@ -15,9 +15,11 @@ jFdpQ_Fd5-SpVvfFcp-_Ddz-SJvj_lpQ_Fd5-RJvyulpYVE9yudpqTOZpaTR3twFNskjjTPQQwtr
 }
 
 
-!definelong GCP_StandardNetworkTier(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_StandardNetworkTier(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,StandardNetworkTier,alias,name)
+PUML_ENTITY(container,#4285F4,StandardNetworkTier,alias,name)
 !enddefinelong

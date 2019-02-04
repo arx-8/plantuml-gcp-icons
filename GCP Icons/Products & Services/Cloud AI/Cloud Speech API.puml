@@ -9,9 +9,11 @@ K7_syVYggggggghw2G
 }
 
 
-!definelong GCP_CloudSpeechAPI(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudSpeechAPI(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudSpeechAPI,alias,name)
+PUML_ENTITY(container,#4285F4,CloudSpeechAPI,alias,name)
 !enddefinelong

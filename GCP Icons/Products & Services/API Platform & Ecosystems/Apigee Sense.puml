@@ -18,9 +18,11 @@ FVdLV73py-FcvqVEX_ngFhZv-N7pyoFdGtur7zpy_BZv-P7p8R-Q3sv-Vjpy_CZva5_D1pS_Fsv-VkHy
 }
 
 
-!definelong GCP_ApigeeSense(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ApigeeSense(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ApigeeSense,alias,name)
+PUML_ENTITY(container,#4285F4,ApigeeSense,alias,name)
 !enddefinelong

@@ -9,9 +9,11 @@ RtB-Pk6Va-ZFMVZdDFfpTu-lggggggggdm
 }
 
 
-!definelong GCP_DedicatedInterconnect(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_DedicatedInterconnect(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,DedicatedInterconnect,alias,name)
+PUML_ENTITY(container,#4285F4,DedicatedInterconnect,alias,name)
 !enddefinelong

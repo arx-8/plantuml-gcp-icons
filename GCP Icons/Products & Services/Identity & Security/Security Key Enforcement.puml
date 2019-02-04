@@ -13,9 +13,11 @@ nFbewy7fyMkjjTPQQwsr_W4
 }
 
 
-!definelong GCP_SecurityKeyEnforcement(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_SecurityKeyEnforcement(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,SecurityKeyEnforcement,alias,name)
+PUML_ENTITY(container,#4285F4,SecurityKeyEnforcement,alias,name)
 !enddefinelong

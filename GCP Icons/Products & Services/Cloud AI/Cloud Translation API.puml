@@ -16,9 +16,11 @@ hysVNvnFcp-_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFlEd-RJvyslpvnVdCt-QJvi_lpP_Vd4-
 }
 
 
-!definelong GCP_CloudTranslationAPI(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudTranslationAPI(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudTranslationAPI,alias,name)
+PUML_ENTITY(container,#4285F4,CloudTranslationAPI,alias,name)
 !enddefinelong

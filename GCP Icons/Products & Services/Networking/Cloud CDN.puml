@@ -12,9 +12,11 @@ v5VpmStFZvkV7paVyglvuERdnytFZvmF-TLySFFpu-RdHyu7Dpy_Rdv-v7nmy_CZvuES3t8-oFc0Mm_8
 }
 
 
-!definelong GCP_CloudCDN(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudCDN(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudCDN,alias,name)
+PUML_ENTITY(container,#4285F4,CloudCDN,alias,name)
 !enddefinelong

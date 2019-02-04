@@ -13,9 +13,11 @@ dv-PcPcPcPa7
 }
 
 
-!definelong GCP_Monitoring(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Monitoring(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Monitoring,alias,name)
+PUML_ENTITY(container,#4285F4,Monitoring,alias,name)
 !enddefinelong

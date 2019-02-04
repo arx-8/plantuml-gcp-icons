@@ -11,9 +11,11 @@ lpP_Vd4-ywVvjFdpQ_Fd5-SpVvfFcp-_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFct-_Dhy-SNv
 }
 
 
-!definelong GCP_TransferAppliance(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_TransferAppliance(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,TransferAppliance,alias,name)
+PUML_ENTITY(container,#4285F4,TransferAppliance,alias,name)
 !enddefinelong

@@ -14,9 +14,11 @@ _jhz_SNxjFlxQ_Vt5-_JxkyltYVU9zudtaTxZtWVxJtuV7vcPcPcPcOk
 }
 
 
-!definelong GCP_CloudSpanner(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudSpanner(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudSpanner,alias,name)
+PUML_ENTITY(container,#4285F4,CloudSpanner,alias,name)
 !enddefinelong

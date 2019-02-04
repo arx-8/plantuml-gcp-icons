@@ -9,9 +9,11 @@ SlxcvkUVcvz_SlxcvkUVdB_9-PkSlrduvoJwSnR-EOt-tEFnLLLLLLLLzHC
 }
 
 
-!definelong GCP_VirtualPrivateCloud(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_VirtualPrivateCloud(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,VirtualPrivateCloud,alias,name)
+PUML_ENTITY(container,#4285F4,VirtualPrivateCloud,alias,name)
 !enddefinelong

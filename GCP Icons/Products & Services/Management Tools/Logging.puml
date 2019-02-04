@@ -9,9 +9,11 @@ Vxhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_wURhJpTVVyhvIJTVVyhvIJa_AUSdvVmatVea
 }
 
 
-!definelong GCP_Logging(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_Logging(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,Logging,alias,name)
+PUML_ENTITY(container,#4285F4,Logging,alias,name)
 !enddefinelong

@@ -5,9 +5,11 @@ MGK5UroiybhA_sddVq0QdCVAjB8gN-4sxtaZr_uUNl0FlAVvZkOQzcET_F-8WxeLqCs0xWLuCu7-1G
 }
 
 
-!definelong GCP_ContainerEngine(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ContainerEngine(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ContainerEngine,alias,name)
+PUML_ENTITY(container,#4285F4,ContainerEngine,alias,name)
 !enddefinelong

@@ -15,9 +15,11 @@ f4YH8aMA52bIf4YH8aMA52bIf4YH8aMA52doaym18ZFHkC04ueOIY1jC86ummRYX1E864uWRJ21kCC6u
 }
 
 
-!definelong GCP_TensorFlow_logo(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_TensorFlow_logo(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,TensorFlow_logo,alias,name)
+PUML_ENTITY(container,#4285F4,TensorFlow_logo,alias,name)
 !enddefinelong

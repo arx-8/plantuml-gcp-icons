@@ -17,9 +17,11 @@ RFVxs-xtDzwd_tIVxNv_s_t-nllqd-wptUzlkz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkC
 }
 
 
-!definelong GCP_CloudDataflow(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_CloudDataflow(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,CloudDataflow,alias,name)
+PUML_ENTITY(container,#4285F4,CloudDataflow,alias,name)
 !enddefinelong

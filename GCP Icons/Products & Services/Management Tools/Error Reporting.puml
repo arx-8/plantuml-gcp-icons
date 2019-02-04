@@ -13,9 +13,11 @@ FxpvySES3tZpuuStFtwOym5lVlmmvmFcVC2S3xZnwypqTMxyEZjztVRuBCkoBCkoBCkox5y
 }
 
 
-!definelong GCP_ErrorReporting(alias,name)
-skinparam rectangle<<name>> {
+!definelong GCP_ErrorReporting(alias,name,container='rectangle')
+skinparam container<<name>> {
   BackgroundColor White
+  BorderColor White
+  Shadowing false
 }
-PUML_ENTITY(rectangle,#4285F4,ErrorReporting,alias,name)
+PUML_ENTITY(container,#4285F4,ErrorReporting,alias,name)
 !enddefinelong
