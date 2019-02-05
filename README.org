@@ -30,9 +30,17 @@ to remember to replace all spaces with ~%20~.
   !includeurl "GCPBase/Storage%20&%20Databases/Cloud%20Bigtable.puml"
   !includeurl "GCPBase/Big%20Data/BigQuery.puml"
 
-  GCP_CloudBigtable(foo, "Big Table")
+  GCP_CloudBigtable(foo, "Lots of data", "BigTable")
   GCP_BigQuery(bar, "Data Processing")
 
   foo -> bar
   @enduml
 #+END_SRC
+
+The API for the macros generated is as follows:
+
+~GCP_<IconName>(alias, "Description", <container class>, "Stereotype")~
+
+Container class has a default value of ~rectangle~, and the stereotype
+(the text that appears in bettween << and >>) is set to the icon name
+as default.
