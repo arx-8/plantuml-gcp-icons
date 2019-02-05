@@ -12,11 +12,14 @@ npWVsthmv_5LLLLLLLNr3m
 }
 
 
-!definelong GCP_GPU(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_GPU(alias,name,container='rectangle',stereo='GPU')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,GPU,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$GPU{scale=0.5}></color>
+]
 !enddefinelong

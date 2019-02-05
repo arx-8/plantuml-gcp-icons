@@ -9,11 +9,14 @@ Dot_oAe_qlAFlFeZ2VxNzyzZxNnLLLLLLLN_0W
 }
 
 
-!definelong GCP_CloudFirewallRules(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudFirewallRules(alias,name,container='rectangle',stereo='CloudFirewallRules')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudFirewallRules,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudFirewallRules{scale=0.5}></color>
+]
 !enddefinelong

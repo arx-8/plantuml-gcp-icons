@@ -9,11 +9,14 @@ SlxcvkUVcvz_SlxcvkUVdB_9-PkSlrduvoJwSnR-EOt-tEFnLLLLLLLLzHC
 }
 
 
-!definelong GCP_VirtualPrivateCloud(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_VirtualPrivateCloud(alias,name,container='rectangle',stereo='VirtualPrivateCloud')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,VirtualPrivateCloud,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$VirtualPrivateCloud{scale=0.5}></color>
+]
 !enddefinelong

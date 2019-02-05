@@ -15,11 +15,14 @@ _RNx-ultsJ_TfztVNxk_ltYV_TDzsltzjVlxY_Tfz_VNxkyltgVTtr-yJxnFl4-yZ_OUyJxQUt1yVcPc
 }
 
 
-!definelong GCP_CloudIAM(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudIAM(alias,name,container='rectangle',stereo='CloudIAM')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudIAM,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudIAM{scale=0.5}></color>
+]
 !enddefinelong

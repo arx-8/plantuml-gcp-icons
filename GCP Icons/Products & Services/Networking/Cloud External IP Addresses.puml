@@ -10,11 +10,14 @@ dsw-_fJpasw-_fJpat9-KivFolb9klL9olb9QlMlJOytCpCpCpEptm4
 }
 
 
-!definelong GCP_CloudExternalIPAddresses(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudExternalIPAddresses(alias,name,container='rectangle',stereo='CloudExternalIPAddresses')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudExternalIPAddresses,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudExternalIPAddresses{scale=0.5}></color>
+]
 !enddefinelong

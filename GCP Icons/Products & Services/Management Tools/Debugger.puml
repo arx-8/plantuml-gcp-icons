@@ -12,11 +12,14 @@ f_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDxZ_4-
 }
 
 
-!definelong GCP_Debugger(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Debugger(alias,name,container='rectangle',stereo='Debugger')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Debugger,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Debugger{scale=0.5}></color>
+]
 !enddefinelong

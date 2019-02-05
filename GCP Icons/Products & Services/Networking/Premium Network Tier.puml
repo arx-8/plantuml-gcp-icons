@@ -14,11 +14,14 @@ sltznVlid-xJxk-ltTzVlC_-wJxj_lxQ_Vt5--oVxjFkxw_Ttr-yp_xfFkt-_jhz_SNxjFlxQ_Vt5-_J
 }
 
 
-!definelong GCP_PremiumNetworkTier(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_PremiumNetworkTier(alias,name,container='rectangle',stereo='PremiumNetworkTier')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,PremiumNetworkTier,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$PremiumNetworkTier{scale=0.5}></color>
+]
 !enddefinelong

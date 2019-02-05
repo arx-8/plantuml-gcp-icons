@@ -13,11 +13,14 @@ nFbewy7fyMkjjTPQQwsr_W4
 }
 
 
-!definelong GCP_SecurityKeyEnforcement(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_SecurityKeyEnforcement(alias,name,container='rectangle',stereo='SecurityKeyEnforcement')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,SecurityKeyEnforcement,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$SecurityKeyEnforcement{scale=0.5}></color>
+]
 !enddefinelong

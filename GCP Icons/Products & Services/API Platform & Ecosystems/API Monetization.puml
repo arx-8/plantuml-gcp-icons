@@ -13,11 +13,14 @@ y-s7E1yGvmFYV42D7nFJnzJuCJbzR7gySyuvvvnpphcl
 }
 
 
-!definelong GCP_APIMonetization(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_APIMonetization(alias,name,container='rectangle',stereo='APIMonetization')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,APIMonetization,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$APIMonetization{scale=0.5}></color>
+]
 !enddefinelong

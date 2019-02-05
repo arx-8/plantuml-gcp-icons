@@ -15,11 +15,14 @@ dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
 
-!definelong GCP_CloudSourceRepositories(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudSourceRepositories(alias,name,container='rectangle',stereo='CloudSourceRepositories')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudSourceRepositories,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudSourceRepositories{scale=0.5}></color>
+]
 !enddefinelong

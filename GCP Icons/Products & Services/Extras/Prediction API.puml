@@ -15,11 +15,14 @@ vnFdewr7d8-s7jmUlzPQQwsrrbhh0m
 }
 
 
-!definelong GCP_PredictionAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_PredictionAPI(alias,name,container='rectangle',stereo='PredictionAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,PredictionAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$PredictionAPI{scale=0.5}></color>
+]
 !enddefinelong

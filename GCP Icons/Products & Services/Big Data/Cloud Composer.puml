@@ -9,11 +9,14 @@ vkjFDrz_olc9_cf-qitNdsw-_fJp4_tL_AIRhp_TVFqfvoVTVFtfvkjFEJ_fvkjFEJyfvoVb_AISdwHR
 }
 
 
-!definelong GCP_CloudComposer(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudComposer(alias,name,container='rectangle',stereo='CloudComposer')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudComposer,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudComposer{scale=0.5}></color>
+]
 !enddefinelong

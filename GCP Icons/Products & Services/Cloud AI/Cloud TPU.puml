@@ -15,11 +15,14 @@ sURdjytFRvpFDZ-_SJxZVCRvZFEnhSSu7zjwyFRugggggggg-W
 }
 
 
-!definelong GCP_CloudTPU(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudTPU(alias,name,container='rectangle',stereo='CloudTPU')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudTPU,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudTPU{scale=0.5}></color>
+]
 !enddefinelong

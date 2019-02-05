@@ -18,11 +18,14 @@ FVdLV73py-FcvqVEX_ngFhZv-N7pyoFdGtur7zpy_BZv-P7p8R-Q3sv-Vjpy_CZva5_D1pS_Fsv-VkHy
 }
 
 
-!definelong GCP_ApigeeSense(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ApigeeSense(alias,name,container='rectangle',stereo='ApigeeSense')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ApigeeSense,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ApigeeSense{scale=0.5}></color>
+]
 !enddefinelong

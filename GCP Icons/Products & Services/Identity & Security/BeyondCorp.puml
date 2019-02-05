@@ -19,11 +19,14 @@ Dzwd_tIVxNv_s_t-nljiz_lRxlSttcUxtzzud_4-utt6-zZUOxoFxJquFfyaIP8a-G
 }
 
 
-!definelong GCP_BeyondCorp(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_BeyondCorp(alias,name,container='rectangle',stereo='BeyondCorp')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,BeyondCorp,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$BeyondCorp{scale=0.5}></color>
+]
 !enddefinelong

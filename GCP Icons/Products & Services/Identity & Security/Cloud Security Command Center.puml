@@ -16,11 +16,14 @@ ZVVfFzrdkz_VTh-_yJxzf_jiz_lRxlSttcUxtzzslx_nFjlz_iRxZFSPxpFUn_OUutrixy7ZyqcI94cI
 }
 
 
-!definelong GCP_CloudSecurityCommandCenter(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudSecurityCommandCenter(alias,name,container='rectangle',stereo='CloudSecurityCommandCenter')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudSecurityCommandCenter,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudSecurityCommandCenter{scale=0.5}></color>
+]
 !enddefinelong

@@ -21,11 +21,14 @@ Vt_j_lxYVVPFzsdtzzVkxo_UfztVNxk_ltYVTdz_yJxnFl4-yJxQUyJxQE_1yVcPcPcPcPdv
 }
 
 
-!definelong GCP_CloudDNS(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudDNS(alias,name,container='rectangle',stereo='CloudDNS')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudDNS,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudDNS{scale=0.5}></color>
+]
 !enddefinelong

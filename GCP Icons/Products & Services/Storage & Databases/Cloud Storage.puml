@@ -9,11 +9,14 @@ vzFcpw_Ddr-SJvi_lpYVE9yudpWVRJtYVBJruFVujTPQQwsrrbeF
 }
 
 
-!definelong GCP_CloudStorage(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudStorage(alias,name,container='rectangle',stereo='CloudStorage')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudStorage,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudStorage{scale=0.5}></color>
+]
 !enddefinelong

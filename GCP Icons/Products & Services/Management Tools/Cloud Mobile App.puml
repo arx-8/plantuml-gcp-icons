@@ -15,11 +15,14 @@ dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
 
-!definelong GCP_CloudMobileApp(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudMobileApp(alias,name,container='rectangle',stereo='CloudMobileApp')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudMobileApp,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudMobileApp{scale=0.5}></color>
+]
 !enddefinelong

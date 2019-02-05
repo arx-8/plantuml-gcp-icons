@@ -18,11 +18,14 @@ BgaD002W4uq2000000000000000000000000000000000000003WWG00000000000000000000000000
 }
 
 
-!definelong GCP_Istio_logo(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Istio_logo(alias,name,container='rectangle',stereo='Istio_logo')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Istio_logo,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Istio_logo{scale=0.5}></color>
+]
 !enddefinelong

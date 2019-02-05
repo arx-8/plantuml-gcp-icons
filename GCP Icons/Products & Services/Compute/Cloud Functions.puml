@@ -12,11 +12,14 @@ RtxyCkTByLlp9Mz-_FBcnozplkJDZr_U_FXbpfUy-V7Bd2-PyoLplcJEb-IjbsJEbsIbN_Vs-9HIIYcb
 }
 
 
-!definelong GCP_CloudFunctions(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudFunctions(alias,name,container='rectangle',stereo='CloudFunctions')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudFunctions,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudFunctions{scale=0.5}></color>
+]
 !enddefinelong

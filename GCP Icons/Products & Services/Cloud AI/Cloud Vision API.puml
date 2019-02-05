@@ -13,11 +13,14 @@ SZx8-O1R3yZvW5iFmFNuKaeffPHIIYcl
 }
 
 
-!definelong GCP_CloudVisionAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudVisionAPI(alias,name,container='rectangle',stereo='CloudVisionAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudVisionAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudVisionAPI{scale=0.5}></color>
+]
 !enddefinelong

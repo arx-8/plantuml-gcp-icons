@@ -16,11 +16,14 @@ RvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxR_Fos-Vbjy_CRvxFDps-Rdzyudsr-VkDynlcCynddOrkF
 }
 
 
-!definelong GCP_CloudIoTCore(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudIoTCore(alias,name,container='rectangle',stereo='CloudIoTCore')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudIoTCore,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudIoTCore{scale=0.5}></color>
+]
 !enddefinelong

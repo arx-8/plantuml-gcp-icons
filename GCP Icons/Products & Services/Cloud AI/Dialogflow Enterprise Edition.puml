@@ -16,11 +16,14 @@ kz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkCzndlOtkFyJwsz-3s-IH9aYJ95m
 }
 
 
-!definelong GCP_DialogflowEnterpriseEdition(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_DialogflowEnterpriseEdition(alias,name,container='rectangle',stereo='DialogflowEnterpriseEdition')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,DialogflowEnterpriseEdition,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$DialogflowEnterpriseEdition{scale=0.5}></color>
+]
 !enddefinelong

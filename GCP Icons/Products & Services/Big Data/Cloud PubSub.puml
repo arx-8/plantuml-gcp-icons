@@ -16,11 +16,14 @@ sJ_TfztVNxk_ltYV_TDzsltzjVlxY_VPFzsdtTzVkx-_U9_zqttQ_Vsr-_kBzsdtzzVkxo_UfztVNxnF
 }
 
 
-!definelong GCP_CloudPubSub(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudPubSub(alias,name,container='rectangle',stereo='CloudPubSub')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudPubSub,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudPubSub{scale=0.5}></color>
+]
 !enddefinelong

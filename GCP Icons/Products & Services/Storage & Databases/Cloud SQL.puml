@@ -16,11 +16,14 @@ s4Fxb-sVjd_R_dF-wzlcvpVE9_yqdsr-Vjly_CRvv9_ciytFRvkVtpYV_DDyjldvRVFp6-UJVvhFDZ-_
 }
 
 
-!definelong GCP_CloudSQL(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudSQL(alias,name,container='rectangle',stereo='CloudSQL')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudSQL,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudSQL{scale=0.5}></color>
+]
 !enddefinelong

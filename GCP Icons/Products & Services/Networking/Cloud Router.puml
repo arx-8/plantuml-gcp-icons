@@ -13,11 +13,14 @@ IYcbz0C
 }
 
 
-!definelong GCP_CloudRouter(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudRouter(alias,name,container='rectangle',stereo='CloudRouter')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudRouter,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudRouter{scale=0.5}></color>
+]
 !enddefinelong

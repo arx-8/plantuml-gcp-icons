@@ -13,11 +13,14 @@ dv-PcPcPcPa7
 }
 
 
-!definelong GCP_CloudDeploymentManager(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudDeploymentManager(alias,name,container='rectangle',stereo='CloudDeploymentManager')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudDeploymentManager,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudDeploymentManager{scale=0.5}></color>
+]
 !enddefinelong

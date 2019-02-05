@@ -12,11 +12,14 @@ _lpQ_Fd5-SoVvjFcpw_Ddr-Sp_nfFct-_Dhy-SNvjFdpQ_Fd5-VJviylpYVE9yudpaTRZpWVRJtuFNwj
 }
 
 
-!definelong GCP_CloudToolsforVisualStudio(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudToolsforVisualStudio(alias,name,container='rectangle',stereo='CloudToolsforVisualStudio')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudToolsforVisualStudio,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudToolsforVisualStudio{scale=0.5}></color>
+]
 !enddefinelong

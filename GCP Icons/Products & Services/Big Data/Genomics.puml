@@ -14,11 +14,14 @@ _hRx_OttsUxtDzvdlCzud_4-jlSOxsDx3uxF9qcI94a-
 }
 
 
-!definelong GCP_Genomics(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Genomics(alias,name,container='rectangle',stereo='Genomics')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Genomics,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Genomics{scale=0.5}></color>
+]
 !enddefinelong

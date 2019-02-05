@@ -13,11 +13,14 @@ UNzUXG_uqG0mdm_moj7-F9ulpURRhzby-pMSBza_cY_DvjklsNpxDPmlsJ-QBytcsw_PVFird2_PFvel
 }
 
 
-!definelong GCP_CloudAPIs(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudAPIs(alias,name,container='rectangle',stereo='CloudAPIs')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudAPIs,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudAPIs{scale=0.5}></color>
+]
 !enddefinelong

@@ -21,11 +21,14 @@ zpVUf_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDx
 }
 
 
-!definelong GCP_CloudBigtable(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudBigtable(alias,name,container='rectangle',stereo='CloudBigtable')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudBigtable,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudBigtable{scale=0.5}></color>
+]
 !enddefinelong

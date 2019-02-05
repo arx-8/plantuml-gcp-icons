@@ -12,11 +12,14 @@ tzFZKqeffPHIIYbz1G
 }
 
 
-!definelong GCP_CloudVPN(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudVPN(alias,name,container='rectangle',stereo='CloudVPN')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudVPN,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudVPN{scale=0.5}></color>
+]
 !enddefinelong

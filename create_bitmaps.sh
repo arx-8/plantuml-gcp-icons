@@ -6,13 +6,16 @@ google_blue="#4285F4"
 
 TEMPLATE=$(cat <<EOF
 
-!definelong GCP___SPRITE__(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP___SPRITE__(alias,name,container='rectangle',stereo='__SPRITE__')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,$google_blue,__SPRITE__,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><\$__SPRITE__{scale=0.5}></color>
+]
 !enddefinelong
 EOF
 )

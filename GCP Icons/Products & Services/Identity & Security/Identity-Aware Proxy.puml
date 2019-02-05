@@ -16,11 +16,14 @@ U9_zqttQ_Vsr-_kBzza_tQVTtr-xlxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5
 }
 
 
-!definelong GCP_IdentityAwareProxy(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_IdentityAwareProxy(alias,name,container='rectangle',stereo='IdentityAwareProxy')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,IdentityAwareProxy,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$IdentityAwareProxy{scale=0.5}></color>
+]
 !enddefinelong

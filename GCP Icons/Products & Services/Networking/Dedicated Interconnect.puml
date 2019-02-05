@@ -9,11 +9,14 @@ RtB-Pk6Va-ZFMVZdDFfpTu-lggggggggdm
 }
 
 
-!definelong GCP_DedicatedInterconnect(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_DedicatedInterconnect(alias,name,container='rectangle',stereo='DedicatedInterconnect')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,DedicatedInterconnect,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$DedicatedInterconnect{scale=0.5}></color>
+]
 !enddefinelong

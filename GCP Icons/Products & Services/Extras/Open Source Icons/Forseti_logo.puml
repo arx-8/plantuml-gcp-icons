@@ -9,11 +9,14 @@ H1B9A2MII39AHeaaesIKIGcVab7uab3uab3uab12yKlubb14AazKyWaM4aLdPM2GAJep0mD8qUdjOlm4
 }
 
 
-!definelong GCP_Forseti_logo(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Forseti_logo(alias,name,container='rectangle',stereo='Forseti_logo')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Forseti_logo,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Forseti_logo{scale=0.5}></color>
+]
 !enddefinelong

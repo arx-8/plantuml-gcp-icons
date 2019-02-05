@@ -29,11 +29,14 @@ QWkBcwnKn9h_BhM5zOsJAiIZScr_2NkO9rJWn4u100000000081N
 }
 
 
-!definelong GCP_GoogleCloudPlatform_lockup(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_GoogleCloudPlatform_lockup(alias,name,container='rectangle',stereo='GoogleCloudPlatform_lockup')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,GoogleCloudPlatform_lockup,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$GoogleCloudPlatform_lockup{scale=0.5}></color>
+]
 !enddefinelong

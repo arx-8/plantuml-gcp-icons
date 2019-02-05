@@ -12,11 +12,14 @@ Dpz-cVEb-AtvaZS_VddpuvSvNuhVcYzvy-ENDpz-cVCbRtxyykR7BtE-vCsFN-PyoPmlcVCbLtxBLDzo
 }
 
 
-!definelong GCP_CloudTexttoSpeech(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudTexttoSpeech(alias,name,container='rectangle',stereo='CloudTexttoSpeech')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudTexttoSpeech,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudTexttoSpeech{scale=0.5}></color>
+]
 !enddefinelong

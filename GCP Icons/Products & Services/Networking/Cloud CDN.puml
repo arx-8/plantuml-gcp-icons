@@ -12,11 +12,14 @@ v5VpmStFZvkV7paVyglvuERdnytFZvmF-TLySFFpu-RdHyu7Dpy_Rdv-v7nmy_CZvuES3t8-oFc0Mm_8
 }
 
 
-!definelong GCP_CloudCDN(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudCDN(alias,name,container='rectangle',stereo='CloudCDN')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudCDN,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudCDN{scale=0.5}></color>
+]
 !enddefinelong

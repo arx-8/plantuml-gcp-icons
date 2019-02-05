@@ -15,11 +15,14 @@ jztlRxpFTh-_xNv_utss-_sDzndlCzvdl8_jFSRxsDw3u_D9aYH9aWy
 }
 
 
-!definelong GCP_CloudDatalab(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudDatalab(alias,name,container='rectangle',stereo='CloudDatalab')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudDatalab,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudDatalab{scale=0.5}></color>
+]
 !enddefinelong

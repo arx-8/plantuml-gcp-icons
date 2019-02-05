@@ -14,11 +14,14 @@ lqzr_lu5B8VpsMzSmE9y0D1KmUzVmE9z0DWqnZY7d-V_nO-R7pzoFhZvyUFcnu-S3_6h-U3cnu-R7pzo
 }
 
 
-!definelong GCP_CloudJobsAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudJobsAPI(alias,name,container='rectangle',stereo='CloudJobsAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudJobsAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudJobsAPI{scale=0.5}></color>
+]
 !enddefinelong

@@ -18,11 +18,14 @@ GFl_j0580rpydpJ0Y_-J1j3-Fsq0qW0N_oSDOFzb0Fil0n06s3zf0Fil0zX_6O0mmFv90zX_6K3x_xG1
 }
 
 
-!definelong GCP_ContainerBuilder(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ContainerBuilder(alias,name,container='rectangle',stereo='ContainerBuilder')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ContainerBuilder,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ContainerBuilder{scale=0.5}></color>
+]
 !enddefinelong

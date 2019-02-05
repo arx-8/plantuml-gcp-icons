@@ -4,11 +4,14 @@ kcmYbvjMRbPparPk6hZxFd7zBt2vN2wNsmOsN_S7kOkvJKcIj04
 }
 
 
-!definelong GCP_modifiers_sharedcoremachineG1(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_sharedcoremachineG1(alias,name,container='rectangle',stereo='modifiers_sharedcoremachineG1')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_sharedcoremachineG1,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_sharedcoremachineG1{scale=0.5}></color>
+]
 !enddefinelong

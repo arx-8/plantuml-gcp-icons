@@ -12,11 +12,14 @@ yva_pQVDdr-RFxyud_dJVDhy-RNvyulpcJ_DfysVNvi_lpYVDdz-RVxyudpQ_Fd5-SJvnFd4-MZh4UUZ
 }
 
 
-!definelong GCP_CloudNetwork(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudNetwork(alias,name,container='rectangle',stereo='CloudNetwork')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudNetwork,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudNetwork{scale=0.5}></color>
+]
 !enddefinelong

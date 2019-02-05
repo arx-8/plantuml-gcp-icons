@@ -1,11 +1,14 @@
 sprite $modifiers_storage_storage [120x120/16z] xTT10G0G4031Qw1_Mpy10DnCWNrlB080GDaWSrStcYkxkhgwkgDqTGS1-45TFwYhgwlh1tNz880VrFM3khgwkdvGrmy20501
 
 
-!definelong GCP_modifiers_storage(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_storage(alias,name,container='rectangle',stereo='modifiers_storage')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_storage,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_storage{scale=0.5}></color>
+]
 !enddefinelong

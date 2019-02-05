@@ -9,11 +9,14 @@ _hdv-IVdR_dL_CtDppytF__a_2s_ch-v-VddvkUVdB-v-VddvkUVdB-v-Vadvszo_YRdRtB-DhT-cvo_
 }
 
 
-!definelong GCP_CloudLoadBalancing(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudLoadBalancing(alias,name,container='rectangle',stereo='CloudLoadBalancing')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudLoadBalancing,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudLoadBalancing{scale=0.5}></color>
+]
 !enddefinelong

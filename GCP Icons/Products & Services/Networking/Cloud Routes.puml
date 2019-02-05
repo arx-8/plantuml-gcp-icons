@@ -15,11 +15,14 @@ TH05tV_jLMt-_E9yva_pQVFdr-RFByvd_ZIVDdz-RVxyudpcJ_Dfy-VNviylpcV-D9ysVtvj_lpYVEPF
 }
 
 
-!definelong GCP_CloudRoutes(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudRoutes(alias,name,container='rectangle',stereo='CloudRoutes')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudRoutes,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudRoutes{scale=0.5}></color>
+]
 !enddefinelong

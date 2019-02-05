@@ -9,11 +9,14 @@ t-JyRMxzDZb_crR_hIUFhwgggggggdS
 }
 
 
-!definelong GCP_PartnerInterconnect(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_PartnerInterconnect(alias,name,container='rectangle',stereo='PartnerInterconnect')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,PartnerInterconnect,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$PartnerInterconnect{scale=0.5}></color>
+]
 !enddefinelong

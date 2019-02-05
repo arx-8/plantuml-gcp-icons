@@ -16,11 +16,14 @@ hysVNvnFcp-_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFlEd-RJvyslpvnVdCt-QJvi_lpP_Vd4-
 }
 
 
-!definelong GCP_CloudTranslationAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudTranslationAPI(alias,name,container='rectangle',stereo='CloudTranslationAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudTranslationAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudTranslationAPI{scale=0.5}></color>
+]
 !enddefinelong

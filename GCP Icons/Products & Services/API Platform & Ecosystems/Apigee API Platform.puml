@@ -16,11 +16,14 @@ dnytFpzoFhZv-P7pGSu7EH_aVC2j1-HyGAS_pVJuKaeffPHIIYd_
 }
 
 
-!definelong GCP_ApigeeAPIPlatform(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ApigeeAPIPlatform(alias,name,container='rectangle',stereo='ApigeeAPIPlatform')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ApigeeAPIPlatform,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ApigeeAPIPlatform{scale=0.5}></color>
+]
 !enddefinelong

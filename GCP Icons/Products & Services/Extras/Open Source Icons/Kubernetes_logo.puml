@@ -28,11 +28,14 @@ Fl4-yJxnFl4-Fhi_
 }
 
 
-!definelong GCP_Kubernetes_logo(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Kubernetes_logo(alias,name,container='rectangle',stereo='Kubernetes_logo')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Kubernetes_logo,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Kubernetes_logo{scale=0.5}></color>
+]
 !enddefinelong

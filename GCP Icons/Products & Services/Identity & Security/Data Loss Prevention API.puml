@@ -21,11 +21,14 @@ _RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGVb_ElNyvcPcPcPcGS
 }
 
 
-!definelong GCP_DataLossPreventionAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_DataLossPreventionAPI(alias,name,container='rectangle',stereo='DataLossPreventionAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,DataLossPreventionAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$DataLossPreventionAPI{scale=0.5}></color>
+]
 !enddefinelong

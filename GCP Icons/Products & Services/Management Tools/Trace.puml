@@ -8,11 +8,14 @@ L_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_Etzpy_7Fpyq_Etzpy_9FpDpb_a_CtEN-R
 }
 
 
-!definelong GCP_Trace(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Trace(alias,name,container='rectangle',stereo='Trace')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Trace,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Trace{scale=0.5}></color>
+]
 !enddefinelong

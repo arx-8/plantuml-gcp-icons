@@ -39,11 +39,14 @@ Vl3zNVeUV38kTCJqh-snlTHO-eMux6-kBk-7VDklpUoPnj8lmsLx0vNrnwKT-VZul9xeA_tkTDbVeBA2
 }
 
 
-!definelong GCP_Kubernetes_name(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Kubernetes_name(alias,name,container='rectangle',stereo='Kubernetes_name')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Kubernetes_name,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Kubernetes_name{scale=0.5}></color>
+]
 !enddefinelong

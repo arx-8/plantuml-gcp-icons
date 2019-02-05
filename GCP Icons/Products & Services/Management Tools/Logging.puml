@@ -9,11 +9,14 @@ Vxhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_wURhJpTVVyhvIJTVVyhvIJa_AUSdvVmatVea
 }
 
 
-!definelong GCP_Logging(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_Logging(alias,name,container='rectangle',stereo='Logging')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,Logging,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$Logging{scale=0.5}></color>
+]
 !enddefinelong

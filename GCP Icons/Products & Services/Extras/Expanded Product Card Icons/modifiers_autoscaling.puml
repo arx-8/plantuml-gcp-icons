@@ -5,11 +5,14 @@ m-gEONJdCBfp6DqvZEuS1fVQSclBhIstjjpQSclBhIstmFr1tvp5ZLjRRlrxrsLt7NOtfPHIIlS
 }
 
 
-!definelong GCP_modifiers_autoscaling(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_autoscaling(alias,name,container='rectangle',stereo='modifiers_autoscaling')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_autoscaling,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_autoscaling{scale=0.5}></color>
+]
 !enddefinelong

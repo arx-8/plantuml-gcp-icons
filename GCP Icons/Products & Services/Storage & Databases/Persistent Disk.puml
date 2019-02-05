@@ -9,11 +9,14 @@ _4tEt-JypSO_a-dFRFmpdVxiyVYggggggghw2W
 }
 
 
-!definelong GCP_PersistentDisk(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_PersistentDisk(alias,name,container='rectangle',stereo='PersistentDisk')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,PersistentDisk,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$PersistentDisk{scale=0.5}></color>
+]
 !enddefinelong

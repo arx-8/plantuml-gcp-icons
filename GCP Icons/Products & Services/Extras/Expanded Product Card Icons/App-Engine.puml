@@ -4,11 +4,14 @@ xTO53iKm60BWtO3xd_RfFoKqT4HcHAhVN3eSE4y08EJ0QJqg9_MOSZ1__EJ7Zqq2NGbq9UH0o84-BhfC
 }
 
 
-!definelong GCP_AppEngine(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_AppEngine(alias,name,container='rectangle',stereo='AppEngine')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,AppEngine,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$AppEngine{scale=0.5}></color>
+]
 !enddefinelong

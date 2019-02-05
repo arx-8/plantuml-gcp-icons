@@ -9,11 +9,14 @@ K7_syVYggggggghw2G
 }
 
 
-!definelong GCP_CloudSpeechAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudSpeechAPI(alias,name,container='rectangle',stereo='CloudSpeechAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudSpeechAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudSpeechAPI{scale=0.5}></color>
+]
 !enddefinelong

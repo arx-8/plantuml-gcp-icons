@@ -5,11 +5,14 @@ T1bmqUmln8qRDsxEZSJz9-VDsCs5APTQDwMKKahF
 }
 
 
-!definelong GCP_modifiers_preemptablevm(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_preemptablevm(alias,name,container='rectangle',stereo='modifiers_preemptablevm')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_preemptablevm,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_preemptablevm{scale=0.5}></color>
+]
 !enddefinelong

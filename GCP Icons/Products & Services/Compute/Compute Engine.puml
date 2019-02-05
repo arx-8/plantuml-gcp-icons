@@ -11,11 +11,14 @@ pEnl
 }
 
 
-!definelong GCP_ComputeEngine(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ComputeEngine(alias,name,container='rectangle',stereo='ComputeEngine')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ComputeEngine,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ComputeEngine{scale=0.5}></color>
+]
 !enddefinelong

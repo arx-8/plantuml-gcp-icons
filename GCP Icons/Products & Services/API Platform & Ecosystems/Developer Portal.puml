@@ -17,11 +17,14 @@ EI0060I084J_r8inzOy6z5_eiztlRxlVttYV_jDzjllzRVVx6-_JVxhFTh-_xNv_uttwJ_VPxlUttUzl
 }
 
 
-!definelong GCP_DeveloperPortal(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_DeveloperPortal(alias,name,container='rectangle',stereo='DeveloperPortal')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,DeveloperPortal,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$DeveloperPortal{scale=0.5}></color>
+]
 !enddefinelong

@@ -28,11 +28,14 @@ lxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGUP_FkTR-5-
 }
 
 
-!definelong GCP_AdvancedSolutionsLab(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_AdvancedSolutionsLab(alias,name,container='rectangle',stereo='AdvancedSolutionsLab')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,AdvancedSolutionsLab,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$AdvancedSolutionsLab{scale=0.5}></color>
+]
 !enddefinelong

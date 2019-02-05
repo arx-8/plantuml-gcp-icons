@@ -7,11 +7,14 @@ pTtlFtU__-JzhR-wlxdx_UVkzv-yl_LNzpTtl__S_VwJzpTtl__S_VwJzpTtl__a_KtUt-JzJTxVvjvl
 }
 
 
-!definelong GCP_BlueHexagon(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_BlueHexagon(alias,name,container='rectangle',stereo='BlueHexagon')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,BlueHexagon,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$BlueHexagon{scale=0.5}></color>
+]
 !enddefinelong

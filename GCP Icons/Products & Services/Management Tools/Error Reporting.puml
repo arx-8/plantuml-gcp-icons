@@ -13,11 +13,14 @@ FxpvySES3tZpuuStFtwOym5lVlmmvmFcVC2S3xZnwypqTMxyEZjztVRuBCkoBCkoBCkox5y
 }
 
 
-!definelong GCP_ErrorReporting(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ErrorReporting(alias,name,container='rectangle',stereo='ErrorReporting')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ErrorReporting,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ErrorReporting{scale=0.5}></color>
+]
 !enddefinelong

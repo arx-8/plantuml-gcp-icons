@@ -4,11 +4,14 @@ xTIrOGH100H1PL3vPojNhET-c7Rk5ilRjtjfhRNMMciHiKGi0Pl09309J0AJm2Gm2Km2ay0aC0bC0fF0
 }
 
 
-!definelong GCP_modifiers_highmemorymachine(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_highmemorymachine(alias,name,container='rectangle',stereo='modifiers_highmemorymachine')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_highmemorymachine,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_highmemorymachine{scale=0.5}></color>
+]
 !enddefinelong

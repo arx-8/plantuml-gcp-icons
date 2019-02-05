@@ -5,11 +5,14 @@ vJ9raJRfHeXY5yWRS0ESk75ejGkfoq8NvIwrRc2BN9IxLBkGkjpiHbZaGkho1YxlwxBKvLrTtiIbrcMv
 }
 
 
-!definelong GCP_modifiers_customvirtualmachine(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_modifiers_customvirtualmachine(alias,name,container='rectangle',stereo='modifiers_customvirtualmachine')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,modifiers_customvirtualmachine,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$modifiers_customvirtualmachine{scale=0.5}></color>
+]
 !enddefinelong

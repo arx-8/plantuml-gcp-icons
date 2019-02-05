@@ -9,11 +9,14 @@ JpTVVyhvIJTVVxhv-bFEJxhv-bFEJyhvIJa_QU7FbUZdMlXpDVgvLuytCpCpCpEpJm
 }
 
 
-!definelong GCP_CloudNaturalLanguageAPI(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_CloudNaturalLanguageAPI(alias,name,container='rectangle',stereo='CloudNaturalLanguageAPI')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,CloudNaturalLanguageAPI,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$CloudNaturalLanguageAPI{scale=0.5}></color>
+]
 !enddefinelong

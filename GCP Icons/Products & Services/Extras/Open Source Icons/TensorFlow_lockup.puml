@@ -164,11 +164,14 @@ yUdwMZ5x7WJf0BDTQcTiadCXCNjURUdhPcEsPD0WsMoxaq6xPBiYPg_cFjYOZTcIGODiizrkov6eJpyn
 }
 
 
-!definelong GCP_TensorFlow_lockup(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_TensorFlow_lockup(alias,name,container='rectangle',stereo='TensorFlow_lockup')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,TensorFlow_lockup,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$TensorFlow_lockup{scale=0.5}></color>
+]
 !enddefinelong

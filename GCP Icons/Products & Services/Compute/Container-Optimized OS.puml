@@ -20,11 +20,14 @@ pSzlcv_VE9_yqtos-Vbjy_CRvvD_ciysFxzjVdxZVBRv-MtpynldiytFRvpFE9znFkDyREinpiUs7XoF
 }
 
 
-!definelong GCP_ContainerOptimizedOS(alias,name,container='rectangle')
-skinparam container<<name>> {
+!definelong GCP_ContainerOptimizedOS(alias,name,container='rectangle',stereo='ContainerOptimizedOS')
+skinparam container<<stereo>> {
   BackgroundColor White
   BorderColor White
   Shadowing false
 }
-PUML_ENTITY(container,#4285F4,ContainerOptimizedOS,alias,name)
+container alias <<stereo>> [
+== name
+<color:#4285F4><$ContainerOptimizedOS{scale=0.5}></color>
+]
 !enddefinelong
