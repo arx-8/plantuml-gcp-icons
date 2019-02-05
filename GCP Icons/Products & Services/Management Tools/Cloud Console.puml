@@ -22,7 +22,7 @@ skinparam container<<stereo>> {
   Shadowing false
 }
 container alias <<stereo>> [
-== name
-<color:#4285F4><$CloudConsole{scale=0.5}></color>
+<b>name
+<color:GCP_COLOR><$CloudConsole{scale=0.3}></color>
 ]
 !enddefinelong

@@ -36,7 +36,7 @@ skinparam container<<stereo>> {
   Shadowing false
 }
 container alias <<stereo>> [
-== name
-<color:#4285F4><$GoogleCloudPlatform_lockup{scale=0.5}></color>
+<b>name
+<color:GCP_COLOR><$GoogleCloudPlatform_lockup{scale=0.3}></color>
 ]
 !enddefinelong

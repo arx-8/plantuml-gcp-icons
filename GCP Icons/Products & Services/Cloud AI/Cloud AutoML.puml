@@ -21,7 +21,7 @@ skinparam container<<stereo>> {
   Shadowing false
 }
 container alias <<stereo>> [
-== name
-<color:#4285F4><$CloudAutoML{scale=0.5}></color>
+<b>name
+<color:GCP_COLOR><$CloudAutoML{scale=0.3}></color>
 ]
 !enddefinelong

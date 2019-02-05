@@ -13,8 +13,8 @@ skinparam container<<stereo>> {
   Shadowing false
 }
 container alias <<stereo>> [
-== name
-<color:#4285F4><\$__SPRITE__{scale=0.5}></color>
+<b>name
+<color:GCP_COLOR><\$__SPRITE__{scale=0.3}></color>
 ]
 !enddefinelong
 EOF

@@ -5,10 +5,12 @@ This is heavily inspired in the [[https://github.com/milo-minderbinder/AWS-Plant
 * How to use
 
 Clone/download a copy of this repo and then make sure to include
-~common.puml~ first, then all the icons you might need.
+~common.puml~ first (or define ~GCP_COLOR~), then all the icons you
+might need.
 
 #+BEGIN_SRC plantuml
   @startuml
+  !include ./common.puml
   !include ./GCP Icons/Products & Services/Storage & Databases/Cloud Bigtable.puml
   !include ./GCP Icons/Products & Services/Big Data/BigQuery.puml
 
@@ -27,6 +29,7 @@ to remember to replace all spaces with ~%20~.
   @startuml
   !define GCPBase https://gitlab.com/rolando.a/plantuml-gcp-icons/raw/master/GCP%20Icons/Products%20&%20Services
 
+  !define GCP_COLOR #4285f4
   !includeurl "GCPBase/Storage%20&%20Databases/Cloud%20Bigtable.puml"
   !includeurl "GCPBase/Big%20Data/BigQuery.puml"
 

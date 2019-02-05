@@ -11,7 +11,7 @@ skinparam container<<stereo>> {
   Shadowing false
 }
 container alias <<stereo>> [
-== name
-<color:#4285F4><$modifiers_standardmachine{scale=0.5}></color>
+<b>name
+<color:GCP_COLOR><$modifiers_standardmachine{scale=0.3}></color>
 ]
 !enddefinelong
